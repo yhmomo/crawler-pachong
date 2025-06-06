@@ -24,7 +24,6 @@ course_id = "3996036"  # 需改成自己的
 course_name = ""  # 需改成自己的
 classroom_id = "16079046"  # 需改成自己的
 
-
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36',
     # 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.67 Safari/537.36',
@@ -128,8 +127,6 @@ def one_video_watcher(video_id, video_name, cid, user_id, classroomid, skuid):
         time.sleep(0.7)
     print("视频" + video_id + " " + video_name + "学习完成！")
     return 1
-
-
 
 
 if __name__ == "__main__":

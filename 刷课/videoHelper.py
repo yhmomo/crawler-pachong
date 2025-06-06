@@ -35,11 +35,14 @@ leaf_type = {
     "discussion": 4
 }
 
-def one_video_watcher(video_id,video_name,cid,user_id,classroomid,skuid):
+
+def one_video_watcher(video_id, video_name, cid, user_id, classroomid, skuid):
     video_id = str(video_id)
     classroomid = str(classroomid)
     url = "https://nbufe.yuketang.cn/video-log/heartbeat/"
-    get_url = "https://nbufe.yuketang.cn/video-log/get_video_watch_progress/?cid="+str(cid)+"&user_id="+user_id+"&classroom_id="+classroomid+"&video_type=video&vtype=rate&video_id=" + str(video_id) + "&snapshot=1&term=latest&uv_id=3078"
+    get_url = "https://nbufe.yuketang.cn/video-log/get_video_watch_progress/?cid=" + str(
+        cid) + "&user_id=" + user_id + "&classroom_id=" + classroomid + "&video_type=video&vtype=rate&video_id=" + str(
+        video_id) + "&snapshot=1&term=latest&uv_id=3078"
     progress = requests.get(url=get_url, headers=headers)
     if_completed = '0'
     try:
@@ -47,10 +50,10 @@ def one_video_watcher(video_id,video_name,cid,user_id,classroomid,skuid):
     except:
         pass
     if if_completed == '1':
-        print(video_name+"已经学习完毕，跳过")
+        print(video_name + "已经学习完毕，跳过")
         return 1
     else:
-        print(video_name+"，尚未学习，现在开始自动学习")
+        print(video_name + "，尚未学习，现在开始自动学习")
     video_frame = 0
     val = 0
     learning_rate = 20
@@ -86,9 +89,9 @@ def one_video_watcher(video_id,video_name,cid,user_id,classroomid,skuid):
             )
             video_frame += learning_rate
             max_time = int((time.time() + 3600) * 1000)
-            timestap = min(max_time, timestap+1000*15)
+            timestap = min(max_time, timestap + 1000 * 15)
         data = {"heart_data": heart_data}
-        r = requests.post(url=url,headers=headers,json=data)
+        r = requests.post(url=url, headers=headers, json=data)
         print(r.text)
         try:
             error_msg = json.loads(r.text)["message"]
@@ -105,18 +108,20 @@ def one_video_watcher(video_id,video_name,cid,user_id,classroomid,skuid):
             r = requests.post(url=submit_url, headers=headers, data=data)
         except:
             pass
-        progress = requests.get(url=get_url,headers=headers)
-        tmp_rate = re.search(r'"rate":(.+?)[,}]',progress.text)
+        progress = requests.get(url=get_url, headers=headers)
+        tmp_rate = re.search(r'"rate":(.+?)[,}]', progress.text)
         if tmp_rate is None:
             return 0
         val = tmp_rate.group(1)
-        print("学习进度为：" + str(float(val)*100) + "%/100%" + " last_point: " + str(video_frame))
+        print("学习进度为：" + str(float(val) * 100) + "%/100%" + " last_point: " + str(video_frame))
         time.sleep(0.7)
-    print("视频"+video_id+" "+video_name+"学习完成！")
+    print("视频" + video_id + " " + video_name + "学习完成！")
     return 1
 
-def get_videos_ids(course_name,classroom_id,course_sign):
-    get_homework_ids = "https://nbufe.yuketang.cn/mooc-api/v1/lms/learn/course/chapter?cid="+str(classroom_id)+"&term=latest&uv_id=3078&sign="+course_sign
+
+def get_videos_ids(course_name, classroom_id, course_sign):
+    get_homework_ids = "https://nbufe.yuketang.cn/mooc-api/v1/lms/learn/course/chapter?cid=" + str(
+        classroom_id) + "&term=latest&uv_id=3078&sign=" + course_sign
     homework_ids_response = requests.get(url=get_homework_ids, headers=headers)
     homework_json = json.loads(homework_ids_response.text)
     homework_dic = {}
@@ -131,11 +136,12 @@ def get_videos_ids(course_name,classroom_id,course_sign):
                     if j['leaf_type'] == leaf_type["video"]:
                         # homework_ids.append(j["id"])
                         homework_dic[j["id"]] = j["name"]
-        print(course_name+"共有"+str(len(homework_dic))+"个作业喔！")
+        print(course_name + "共有" + str(len(homework_dic)) + "个作业喔！")
         return homework_dic
     except:
         print("fail while getting homework_ids!!! please re-run this program!")
         raise Exception("fail while getting homework_ids!!! please re-run this program!")
+
 
 if __name__ == "__main__":
     your_courses = []
@@ -144,7 +150,7 @@ if __name__ == "__main__":
     user_id_url = "https://nbufe.yuketang.cn/edu_admin/get_user_basic_info/?term=latest&uv_id=3037"
     id_response = requests.get(url=user_id_url, headers=headers)
     try:
-        user_id = re.search(r'"uv_id":(.+?)',id_response.text).group(1).strip()
+        user_id = re.search(r'"uv_id":(.+?)', id_response.text).group(1).strip()
     except:
         print("也许是网路问题，获取不了user_id,请试着重新运行")
         raise Exception("也许是网路问题，获取不了user_id,请试着重新运行!!! please re-run this program!")
@@ -168,18 +174,21 @@ if __name__ == "__main__":
 
     # 显示用户提示
     for index, value in enumerate(your_courses):
-        print("编号："+str(index+1)+" 课名："+str(value["course_name"]))
+        print("编号：" + str(index + 1) + " 课名：" + str(value["course_name"]))
     number = input("你想刷哪门课呢？请输入编号。输入0表示全部课程都刷一遍\n")
-    if int(number)==0:
-        #0 表示全部刷一遍
+    if int(number) == 0:
+        # 0 表示全部刷一遍
         for ins in your_courses:
-            homework_dic = get_videos_ids(ins["course_name"],ins["classroom_id"], ins["course_sign"])
+            homework_dic = get_videos_ids(ins["course_name"], ins["classroom_id"], ins["course_sign"])
             for one_video in homework_dic.items():
-                one_video_watcher(one_video[0],one_video[1],ins["course_id"],user_id,ins["classroom_id"],ins["sku_id"])
+                one_video_watcher(one_video[0], one_video[1], ins["course_id"], user_id, ins["classroom_id"],
+                                  ins["sku_id"])
     else:
-        #指定序号的课程刷一遍
-        number = int(number)-1
-        homework_dic = get_videos_ids(your_courses[number]["course_name"],your_courses[number]["classroom_id"],your_courses[number]["course_sign"])
+        # 指定序号的课程刷一遍
+        number = int(number) - 1
+        homework_dic = get_videos_ids(your_courses[number]["course_name"], your_courses[number]["classroom_id"],
+                                      your_courses[number]["course_sign"])
         for one_video in homework_dic.items():
-            one_video_watcher(one_video[0], one_video[1], your_courses[number]["course_id"], user_id, your_courses[number]["classroom_id"],
-                                your_courses[number]["sku_id"])
+            one_video_watcher(one_video[0], one_video[1], your_courses[number]["course_id"], user_id,
+                              your_courses[number]["classroom_id"],
+                              your_courses[number]["sku_id"])

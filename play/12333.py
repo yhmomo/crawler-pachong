@@ -1,11 +1,11 @@
 file_path = "蘑菇屋：十封遗书曝光，泪崩全网林枫安暖.txt"  # 替换为你的文件路径
-with open(file_path, "r",encoding='utf-8') as file:
+with open(file_path, "r", encoding='utf-8') as file:
     contents = file.readlines()
 
-with open('1.txt','r') as f:
-    sc=f.readlines()
+with open('1.txt', 'r') as f:
+    sc = f.readlines()
 # 删除指定内容
-s=''
+s = ''
 with open(file_path, "w") as file:
     for content in contents:
         print(content)
@@ -15,7 +15,7 @@ with open(file_path, "w") as file:
                 pass
             # s=''
             else:
-                s=content
+                s = content
                 file.write(s)
 #     print(content)
 #     if content in sc:

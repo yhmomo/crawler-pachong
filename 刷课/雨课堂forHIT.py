@@ -44,8 +44,6 @@ XPATH_WATCH_PROGRESS = '/html/body/div[4]/div[2]/div[2]/div[3]/div/div[2]/div/di
 XPATH_VIDEO_TITLE = "/html/body/div[4]/div[2]/div[2]/div[3]/div/div[2]/div/div/section[1]/div[1]/span"
 XPATH_BUTTON_2X_SPEED = '/html/body/div[4]/div[2]/div[2]/div[3]/div/div[2]/div/div/section[2]/div[1]/div/div[2]/div/xt-wrap/xt-controls/xt-inner/xt-speedbutton/xt-speedvalue'
 
-
-
 """下一步目标：
 1.增加多线程播放功能
 2.提高稳定性和健壮性
@@ -339,7 +337,7 @@ class AutoYuketangForHIT:
         :param element_xpath: 元素xpath
         :return: 对对应的元素
         """
-        element = WebDriverWait(self.driver,20).until(EC.presence_of_element_located((By.XPATH,element_xpath)))
+        element = WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.XPATH, element_xpath)))
         return element
 
     def wait_and_click(self, element_xpath):
