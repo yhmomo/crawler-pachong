@@ -129,5 +129,15 @@ def video_save(imgsoup, son_path, xq_name):
 
 
 if __name__ == '__main__':
-    for i in range(11, 20):  # 获取到10页
-        getos(i)
+    retry_limit = 3
+    retry_count = 0
+    should_retry = True
+    for i in range(1, 11):  # 获取到10页
+        while should_retry and retry_count < retry_limit:
+            try:
+                getos(i)
+                should_retry = False  # 成功则停止重试
+            except requests.exceptions as e:
+                retry_count += 1
+                print("请求失败，正在重试...")
+                time.sleep(10)  # 等待一秒再重试

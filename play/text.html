@@ -576,3 +576,15 @@ C:\Users\JBWang\AppData\Local\Programs\Python\Python312\python.exe -X pycache_pr
 </div>
 </body>
 </html>
+
+# 创建文件夹
+folder_path = Path('my_folder')
+folder_path.mkdir(parents=True, exist_ok=True)  # parents=True表示如果父目录不存在也一并创建，exist_ok=True表示如果目录已存在则不抛出异常
+
+# 写入文件
+file_name = 'example.img'
+file_path = folder_path / file_name
+with open(file_path, 'wb') as file:
+# 假设你有一个二进制数据，例如从一个文件中读取的
+binary_data = b'\x00\x01\x02\x03'  # 示例二进制数据
+file.write(binary_data)
