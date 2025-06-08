@@ -34,7 +34,7 @@ headers = {
 
 def imgStr_get(url):
     try:
-        with gevent.Timeout(60, False):
+        with gevent.Timeout(120, False):
             response = requests.get(url, headers=headers)
             response.encoding = 'utf-8'
             soup = BeautifulSoup(response.text, 'lxml')
@@ -51,7 +51,7 @@ def imgStr_get(url):
 def doc_get(param):
     params = {'page': str(param)}
     try:
-        with gevent.Timeout(60, False):
+        with gevent.Timeout(120, False):
             response = requests.get('https://cangcuc.com/', params=params, headers=headers)
             response.encoding = 'utf-8'
             soup = BeautifulSoup(response.text, 'lxml')
@@ -108,7 +108,7 @@ def img_save(imgsoup, son_path, xq_name):
             continue
 
         try:
-            with gevent.Timeout(60, False):
+            with gevent.Timeout(120, False):
                 img_src_url = cstr(img_src_url)
                 response = requests.get(img_src_url)
                 if response.status_code == 200:
@@ -138,7 +138,7 @@ def video_save(imgsoup, son_path, xq_name):
             continue
 
         try:
-            with gevent.Timeout(60, False):
+            with gevent.Timeout(120, False):
                 video_src_url = cstr(video_src_url)
                 video_response = requests.get(video_src_url)
                 video_response.raise_for_status()
@@ -161,7 +161,7 @@ def rs(i):
 
     while should_retry and retry_count < retry_limit:
         try:
-            with gevent.Timeout(300, False):
+            with gevent.Timeout(480, False):
                 getos(i)
                 should_retry = False
                 print(f"第 {i} 页下载完成")
@@ -185,11 +185,12 @@ def thread_worker(start, end):
     gevent.joinall(jobs)
 
 
-def main():
+def main(param):
     threads = []
-    num_threads = 20  # 线程数量
-    pages_per_thread = 20 // num_threads  # 每个线程处理的页数
-    remainder = 20 % num_threads  # 余数，用于分配给前几个线程
+    num_threads = 50  # 设置线程数量为 50
+    total_pages = param  # 总页数
+    pages_per_thread = total_pages // num_threads  # 每个线程处理的页数
+    remainder = total_pages % num_threads  # 余数，用于分配给前几个线程
 
     start = 1
     for i in range(num_threads):
@@ -210,4 +211,4 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    main(20)
