@@ -1,7 +1,7 @@
 import os
 import time
 from pathlib import Path
-
+import socket
 import requests
 from PIL import Image
 from bs4 import BeautifulSoup
@@ -67,8 +67,8 @@ def getos(param):
         video_class = "col-12 grid-item p-1"
         if img_class in imgsoup.prettify():
             img_save(imgsoup, son_path, xq_name)
-        if video_class in imgsoup.prettify():
-            video_save(imgsoup, son_path, xq_name)
+        # if video_class in imgsoup.prettify():
+        #     video_save(imgsoup, son_path, xq_name)
     print(f"第{param}页下载完成")
 
 
@@ -109,7 +109,7 @@ def video_save(imgsoup, son_path, xq_name):
         #  视频链接
         video_src_url = f.select("source")[0].get("src")
         #  视频名称
-        video_src_name = video_src_url[video_src_url.rindex("/") + 1:]
+        video_src_name = cstr(video_src_url[video_src_url.rindex("/") + 1:])
         # 判断文件是否存在
         file_names = os.listdir(son_path)
         filepath = os.path.join(son_path, video_src_name)
@@ -128,16 +128,27 @@ def video_save(imgsoup, son_path, xq_name):
     print(f"视频下载完成: {xq_name}")
 
 
-if __name__ == '__main__':
+def rs(i):
     retry_limit = 3
     retry_count = 0
     should_retry = True
-    for i in range(1, 11):  # 获取到10页
-        while should_retry and retry_count < retry_limit:
-            try:
-                getos(i)
-                should_retry = False  # 成功则停止重试
-            except requests.exceptions as e:
-                retry_count += 1
-                print("请求失败，正在重试...")
-                time.sleep(10)  # 等待一秒再重试
+    print(f"正在请求第 {i} 页...")
+
+    while should_retry and retry_count < retry_limit:
+        try:
+            socket.setdefaulttimeout(20)
+            getos(i)
+            should_retry = False  # 请求成功，停止重试
+            print(f"第 {i} 页下载完成")
+        except requests.exceptions.RequestException as e:
+            retry_count += 1
+            print(f"第 {i} 页请求失败，正在进行第 {retry_count} 次重试...")
+            time.sleep(10)  # 等待10秒再重试
+    if retry_count >= retry_limit:
+        print(f"第 {i} 页请求失败，已达最大重试次数，跳过此页")
+
+
+if __name__ == '__main__':
+    for i in range(1, 21):  # 获取到20页
+        # for j in range(1, 4):  # 防止下载不全部。
+        rs(i)

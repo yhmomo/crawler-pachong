@@ -11,5 +11,7 @@ def clean_string(input_string):
         cleaned_string = re.sub(pattern, '', input_string)
     else:
         cleaned_string = re.sub(r'[<>:"/\\|?*]', '', input_string)
+        pattern = r'\n|\r|\t|\b|\f'
+        cleaned_string = re.sub(pattern, '', cleaned_string)
         cleaned_string = re.sub(r'\s+', '', cleaned_string)
     return cleaned_string
