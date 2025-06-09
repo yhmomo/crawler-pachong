@@ -187,7 +187,7 @@ def thread_worker(start, end):
 
 def main(param):
     threads = []
-    num_threads = 50  # 设置线程数量为 50
+    num_threads = 100  # 设置线程数量为 50
     total_pages = param  # 总页数
     pages_per_thread = total_pages // num_threads  # 每个线程处理的页数
     remainder = total_pages % num_threads  # 余数，用于分配给前几个线程
