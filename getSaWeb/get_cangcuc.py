@@ -104,53 +104,62 @@ def img_save(imgsoup, son_path, xq_name):
         filepath = os.path.join(son_path, img_src_name)
 
         if img_src_name in file_names:
-            print(f"{img_src_name}已存在")
+            print(f"{img_src_name} 已存在")
             continue
 
         try:
-            with gevent.Timeout(120, False):
+            with gevent.Timeout(300, False):
                 img_src_url = cstr(img_src_url)
-                response = requests.get(img_src_url)
+                response = requests.get(img_src_url, headers=headers, stream=True, timeout=60)
                 if response.status_code == 200:
                     with open(filepath, 'wb') as f:
                         f.write(response.content)
-                    image = Image.open(filepath)
-                    image.save(filepath)
-                    print(f"图片下载完成: {img_src_name}")
+
+                    # 尝试打开图片并转换为 RGB 模式
+                    try:
+                        image = Image.open(filepath)
+                        if image.mode != 'RGB':
+                            image = image.convert('RGB')
+                        image.save(filepath, 'JPEG')
+                        print(f"图片下载完成：{img_src_name}")
+                    except Exception as e:
+                        print(f"转换图片格式时出错：{str(e)}")
         except gevent.Timeout:
             print(f"请求 {img_src_name} 超时，跳过此图片")
         except Exception as e:
             print(f"下载 {img_src_name} 出错：{str(e)}")
-    print(f"图片下载完成: {xq_name}")
+    print(f"图片下载完成：{xq_name}")
 
 
 def video_save(imgsoup, son_path, xq_name):
     video_divlist = imgsoup.select("div.col-12.grid-item.p-1")
     for f in video_divlist:
-        video_src_url = f.select("source")[0].get("src")
-        video_src_name = cstr(video_src_url[video_src_url.rindex("/") + 1:])
-
+        video_src_url = cstr(f.select("source")[0].get("src"))
+        if "https" not in video_src_url:
+            video_src_url = "https://cangcuc.com" + video_src_url
+        video_src_name = video_src_url[video_src_url.rindex("/") + 1:]
         file_names = os.listdir(son_path)
         filepath = os.path.join(son_path, video_src_name)
-
         if video_src_name in file_names:
             print(f"{video_src_name}已存在")
             continue
-
         try:
-            with gevent.Timeout(120, False):
-                video_src_url = cstr(video_src_url)
-                video_response = requests.get(video_src_url)
+            # 设置合适的chunk_size，
+            chunk_size = 1024 * 1024 * 10  # 1MB 每块
+            with requests.get(video_src_url, headers=headers, stream=True, timeout=60) as video_response:
                 video_response.raise_for_status()
-
+                total_size = int(video_response.headers.get('content-length', 0))
+                downloaded_size = 0
                 with open(filepath, 'wb') as f:
-                    f.write(video_response.content)
-                print(f"视频下载完成{xq_name + video_src_name}")
-        except gevent.Timeout:
-            print(f"请求 {video_src_name} 超时，跳过此视频")
+                    for chunk in video_response.iter_content(chunk_size=chunk_size):
+                        if chunk:
+                            f.write(chunk)
+                            downloaded_size += len(chunk)
+                            print(f"Downloaded {downloaded_size}/{total_size} bytes", end='\r')
+                print(f"\n视频下载完成: {xq_name + video_src_name}")
         except Exception as e:
             print(f"下载 {video_src_name} 出错：{str(e)}")
-    print(f"视频下载完成: {xq_name}")
+        print(f"视频下载完成: {xq_name}")
 
 
 def rs(i):
