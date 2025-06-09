@@ -70,7 +70,7 @@ def getos(param):
     if docsoup is None:
         print(f"无法获取第 {param} 页内容，跳过此页")
         return
-    folder_path = Path(path + '/' + f'第{param}页内容')
+    folder_path = Path(path + '/')
     folder_path.mkdir(parents=True, exist_ok=True)
 
     divlist = docsoup.select("div.col-xl-4.col-lg-6.col-md-6.masonry-item")
