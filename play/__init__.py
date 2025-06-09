@@ -1,2 +1,2 @@
 from 图片获取 import getos
-from text import getos as getos
+from 视频获取 import getos as getos
