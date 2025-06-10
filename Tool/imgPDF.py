@@ -18,7 +18,8 @@ def imgPDF(source_folder, output_folder):
             images = []
             filenames = os.listdir(folder_path)
             # 按文件名中“ảnh”后的数字从小到大排序
-            filenames.sort(key=lambda x: int(x.split('ảnh')[1].split('.')[0]))
+            if "ảnh" in filenames:
+                filenames.sort(key=lambda x: int(x.split('ảnh')[1].split('.')[0]))
             for filename in filenames:
                 if filename.lower().endswith(('.png', '.jpg', '.jpeg', '.bmp', '.tiff')):
                     image_path = os.path.join(folder_path, filename)
