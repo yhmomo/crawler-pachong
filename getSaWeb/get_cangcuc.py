@@ -1,12 +1,11 @@
 import os
-import time
+
 import gevent
 from gevent import monkey
 
 monkey.patch_all()
 from threading import Thread
 
-import socket
 import requests
 from pathlib import Path
 from bs4 import BeautifulSoup
@@ -77,6 +76,8 @@ def getos(param):
     for div in divlist:
         xq_href = div.select("a")[0].get("href")
         xq_name = cstr(div.select("h5")[0].get_text())
+        if "AIGenerated" in xq_name:
+            continue
         son_path = Path(folder_path, xq_name)
         son_path.mkdir(parents=True, exist_ok=True)
 
@@ -89,8 +90,8 @@ def getos(param):
 
         if img_class in imgsoup.prettify():
             img_save(imgsoup, son_path, xq_name)
-        # if video_class in imgsoup.prettify():
-        #     video_save(imgsoup, son_path, xq_name)
+        if video_class in imgsoup.prettify():
+            video_save(imgsoup, son_path, xq_name)
     print(f"第{param}页下载完成")
 
 
@@ -99,12 +100,11 @@ def img_save(imgsoup, son_path, xq_name):
     for f in img_divlist:
         img_src_url = f.select("img")[0].get("src")
         img_src_name = cstr(f.select("img")[0].get("alt")) + ".jpg"
-
         file_names = os.listdir(son_path)
         filepath = os.path.join(son_path, img_src_name)
 
         if img_src_name in file_names:
-            print(f"{img_src_name} 已存在")
+            # print(f"{img_src_name} 已存在")
             continue
 
         try:
@@ -141,7 +141,7 @@ def video_save(imgsoup, son_path, xq_name):
         file_names = os.listdir(son_path)
         filepath = os.path.join(son_path, video_src_name)
         if video_src_name in file_names:
-            print(f"{video_src_name}已存在")
+            # print(f"{video_src_name}已存在")
             continue
         try:
             # 设置合适的chunk_size，
@@ -220,4 +220,4 @@ def main(param):
 
 
 if __name__ == '__main__':
-    main(20)
+    main(6)
