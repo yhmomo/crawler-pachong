@@ -1,8 +1,8 @@
 import os
 import shutil
 
-from PIL import Image
 import cv2
+from PIL import Image
 
 
 def FDdel(source_folder, output_folder):
@@ -69,8 +69,31 @@ def WJdel(source_folder, output_folder):
                     except Exception as e:
                         os.remove(file_path)
                         print("视频无效或损坏:", file_path, "已删除", e)
-
                 # 其他非图片/视频文件可选处理（如日志记录）
                 else:
                     print("未知文件类型，跳过:", file_path)
-    print("筛选文化已删除完成")
+    print("筛选的文件已删除完成")
+
+
+def imgdel(source_folder, output_folder):
+    # if not os.path.exists(output_folder):
+    #     os.makedirs(output_folder)
+    for folder_name in os.listdir(source_folder):
+        folder_path = os.path.join(source_folder, folder_name)
+        if os.path.isdir(folder_path):
+            for filename in sorted(os.listdir(folder_path)):
+                file_path = os.path.join(folder_path, filename)
+
+                # 图片处理部分
+                if filename.lower().endswith(('.png', '.jpg', '.jpeg', '.bmp', '.gif')):
+                    os.remove(file_path)
+    print("图片已删除完成")
+# # 视频处理部分
+# elif filename.lower().endswith('.mp4'):
+#     try:
+#         if not is_valid_video(file_path):
+#             raise Exception("视频无法读取")
+#         # print("视频有效:", file_path)
+#     except Exception as e:
+#         os.remove(file_path)
+#         print("视频无效或损坏:", file_path, "已删除", e)
