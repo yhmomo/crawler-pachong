@@ -1,6 +1,6 @@
 import requests
 
-from getSaWeb.text.可灵AI视频 import handle_file
+from getSaWeb.大模型视频.可灵AI视频 import handle_file
 
 # 定义全局变量 token
 next_page_token = ''
