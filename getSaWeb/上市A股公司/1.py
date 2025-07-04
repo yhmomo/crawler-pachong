@@ -3,7 +3,7 @@ import pandas as pd
 # 读取数据
 data1 = pd.read_csv(r"C:\Users\JBWang\Desktop\供应商\供应商1.csv")
 data2 = pd.read_csv(r"C:\Users\JBWang\Desktop\供应商\供应商2.csv")
-data3 = pd.read_csv('A股公司.csv')
+data3 = pd.read_csv('天眼查数据/A股公司.csv')
 
 # 去重
 df_unique_name1 = data1.drop_duplicates(subset=['企业名称'])

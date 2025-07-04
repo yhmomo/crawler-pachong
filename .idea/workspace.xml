@@ -7,10 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="270953fb-1095-47f7-a384-aa94f38c5733" name="更改" comment="feat(getSaWeb): 新增多个数据抓取脚本&#10;&#10;- 新增 pika 视频保存为列表脚本&#10;- 新增天眼查 数据抓取脚本&#10;- 新增 上海政府采购网合同 信息抓取脚本">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/getSaWeb/上市A股公司/东方财富A股公司.py" beforeDir="false" afterPath="$PROJECT_DIR$/getSaWeb/上市A股公司/获取东方财富A股公司.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/getSaWeb/上市A股公司/公司名称.py" beforeDir="false" afterPath="$PROJECT_DIR$/getSaWeb/上市A股公司/获取公司名称.py" afterDir="false" />
+    <list default="true" id="270953fb-1095-47f7-a384-aa94f38c5733" name="更改" comment="feat(getSaWeb): 新增多个数据处理和分析脚本&#10;&#10;- 新增上市A股公司数据处理脚本，用于处理供应商和股票公司数据&#10;- 新增图片和视频下载脚本，可从网站抓取多媒体内容&#10;- 新增IPv6获取脚本，用于获取和发送网络配置信息&#10;- 新增新浪科技新闻数据分析脚本，包括爬虫和数据处理模块- 新增文件和数据清理工具脚本，用于删除无效或重复的文件">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,76 +69,76 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JavaScript 调试.text.html.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Node.js.1.js.executor": "Run",
-    "Python.1 (1).executor": "Run",
-    "Python.1.executor": "Run",
-    "Python.2.executor": "Run",
-    "Python.DAF_get (1).executor": "Run",
-    "Python.Image_to_PDF  (1).executor": "Run",
-    "Python.Strclean.executor": "Debug",
-    "Python.__init__.executor": "Run",
-    "Python.del_FD (1).executor": "Run",
-    "Python.del_FD.executor": "Run",
-    "Python.del_mp4.executor": "Run",
-    "Python.general_crack.executor": "Run",
-    "Python.get_cangcuc (1).executor": "Run",
-    "Python.get_ipv6 (1).executor": "Run",
-    "Python.get_sina (1).executor": "Run",
-    "Python.get_tool.executor": "Run",
-    "Python.ipv6.executor": "Run",
-    "Python.main (1).executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.pika视频下载.executor": "Run",
-    "Python.reStr.executor": "Run",
-    "Python.szggzy.executor": "Run",
-    "Python.text (1).executor": "Run",
-    "Python.text.executor": "Run",
-    "Python.vidu视频 (1).executor": "Run",
-    "Python.上海政府采购网合同.executor": "Debug",
-    "Python.公司名称.executor": "Run",
-    "Python.动漫图片获取.executor": "Run",
-    "Python.即梦视频 (1).executor": "Debug",
-    "Python.图片检测.executor": "Run",
-    "Python.图片获取.executor": "Run",
-    "Python.图片转PDF.executor": "Run",
-    "Python.天眼查 (1).executor": "Debug",
-    "Python.天眼查.executor": "Run",
-    "Python.宝安区.executor": "Run",
-    "Python.整合表.executor": "Run",
-    "Python.环水集团.executor": "Run",
-    "Python.电影评价.executor": "Run",
-    "Python.获取天眼查链接.executor": "Run",
-    "Python.补充.executor": "Run",
-    "Python.表格初始化 (1).executor": "Run",
-    "Python.视频获取 (1).executor": "Run",
-    "Python.视频获取.executor": "Run",
-    "Python.请求PDF转图片文字.executor": "Run",
-    "Python.豆瓣电影top250 (1).executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/Python/crawler-pachong",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "advanced.settings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript 调试.text.html.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Node.js.1.js.executor&quot;: &quot;Run&quot;,
+    &quot;Python.1 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.DAF_get (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.Image_to_PDF  (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.Strclean.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
+    &quot;Python.del_FD (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.del_FD.executor&quot;: &quot;Run&quot;,
+    &quot;Python.del_mp4.executor&quot;: &quot;Run&quot;,
+    &quot;Python.general_crack.executor&quot;: &quot;Run&quot;,
+    &quot;Python.get_cangcuc (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.get_ipv6 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.get_sina (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.get_tool.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ipv6.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.pika视频下载.executor&quot;: &quot;Run&quot;,
+    &quot;Python.reStr.executor&quot;: &quot;Run&quot;,
+    &quot;Python.szggzy.executor&quot;: &quot;Run&quot;,
+    &quot;Python.text (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.text.executor&quot;: &quot;Run&quot;,
+    &quot;Python.vidu视频 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.上海政府采购网合同.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.公司名称.executor&quot;: &quot;Run&quot;,
+    &quot;Python.动漫图片获取.executor&quot;: &quot;Run&quot;,
+    &quot;Python.即梦视频 (1).executor&quot;: &quot;Debug&quot;,
+    &quot;Python.图片检测.executor&quot;: &quot;Run&quot;,
+    &quot;Python.图片获取.executor&quot;: &quot;Run&quot;,
+    &quot;Python.图片转PDF.executor&quot;: &quot;Run&quot;,
+    &quot;Python.天眼查 (1).executor&quot;: &quot;Debug&quot;,
+    &quot;Python.天眼查.executor&quot;: &quot;Run&quot;,
+    &quot;Python.宝安区.executor&quot;: &quot;Run&quot;,
+    &quot;Python.整合表.executor&quot;: &quot;Run&quot;,
+    &quot;Python.环水集团.executor&quot;: &quot;Run&quot;,
+    &quot;Python.电影评价.executor&quot;: &quot;Run&quot;,
+    &quot;Python.获取天眼查链接.executor&quot;: &quot;Run&quot;,
+    &quot;Python.补充.executor&quot;: &quot;Run&quot;,
+    &quot;Python.表格初始化 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.视频获取 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.视频获取.executor&quot;: &quot;Run&quot;,
+    &quot;Python.请求PDF转图片文字.executor&quot;: &quot;Run&quot;,
+    &quot;Python.豆瓣电影top250 (1).executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Python/crawler-pachong&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "ChangesTree.GroupingKeys": [
-      "repository"
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+      &quot;repository&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\crawler-pachong\getSaWeb\上市A股公司" />
@@ -571,7 +570,8 @@
       <workItem from="1751657810644" duration="52000" />
       <workItem from="1751657872576" duration="60000" />
       <workItem from="1751658149119" duration="468000" />
-      <workItem from="1751658629113" duration="467000" />
+      <workItem from="1751658629113" duration="857000" />
+      <workItem from="1751659494501" duration="113000" />
     </task>
     <task id="LOCAL-00001" summary="爬虫测试代码">
       <option name="closed" value="true" />
@@ -829,7 +829,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751554663418</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="feat(getSaWeb): 新增多个数据处理和分析脚本&#10;&#10;- 新增上市A股公司数据处理脚本，用于处理供应商和股票公司数据&#10;- 新增图片和视频下载脚本，可从网站抓取多媒体内容&#10;- 新增IPv6获取脚本，用于获取和发送网络配置信息&#10;- 新增新浪科技新闻数据分析脚本，包括爬虫和数据处理模块- 新增文件和数据清理工具脚本，用于删除无效或重复的文件">
+      <option name="closed" value="true" />
+      <created>1751659444052</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1751659444053</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -866,7 +874,6 @@
     <MESSAGE value="移动" />
     <MESSAGE value="feat(ruishu): 添加阿里云验证码破解功能&#10;&#10;- 新增 AliCaptcha.py 文件，实现阿里云验证码的破解逻辑&#10;- 添加 config.py 文件，配置 gunicorn 服务器参数&#10;- 实现了验证码破解的各个环节，包括设备数据解密、鼠标轨迹生成、签名生成等&#10;- 集成了 loguru 日志库和 retry 重试装饰器" />
     <MESSAGE value="feat(getSaWeb): 添加获取 IPv6 地址功能并发送邮件&#10;&#10;- 新增 get_ipv6.py 文件实现以下功能：&#10;  -通过 ARP 表和 NDP邻居表获取设备的 IPv6 地址&#10;  - 从第三方 API 获取公网 IPv4 和 IPv6 地址&#10;  -生成包含网络配置信息的 HTML邮件内容&#10;  - 使用 SMTP 发送邮件给指定接收者" />
-    <MESSAGE value="1" />
     <MESSAGE value="feat(表格PDF): 添加表格初始化脚本&#10;&#10;- 新增表格初始化.py脚本，用于处理Excel文件&#10;- 读取指定Excel文件，清理数据并保存到新的Excel文件&#10;- 自动调整列宽以适应内容&#10;- 主要功能包括：&#10;  - 读取Excel文件并解析所有工作表 - 对每一列应用清理字符串函数&#10;  - 删除包含特定关键字的行&#10;  - 删除全为空值的列&#10;  - 重置索引并保存清理后的数据" />
     <MESSAGE value="feat(扫描PDF文字): 优化 PDF 文字提取和图片合并功能&#10;&#10;- 重命名项目文件夹为&quot;扫描PDF文字&quot;&#10;- 更新 main.py 文件，增加图片合并和文字提取功能&#10;- 删除旧的输出文件，合并图片和文字内容&#10;- 优化字符串清理函数，增加更多特殊字符的替换" />
     <MESSAGE value="添加爬虫代码" />
@@ -874,7 +881,9 @@
     <MESSAGE value="fix(电影): 优化外文名处理逻辑&#10;&#10;- 移除了不必要的变量声明和条件判断&#10;- 简化了外文名的提取和处理流程&#10;-增加了对其他名称列表为空时的处理&#10;- 优化了代码结构，提高了可读性和维护性" />
     <MESSAGE value="(getfeatSaWeb): 新增多个数据抓取脚本&#10;&#10;- 新增 del_mp4.py 脚本，用于删除无效的图片和视频文件&#10;- 新增 ieee论文.py 脚本，用于抓取 IEEE 论文信息&#10;- 新增 vidu视频.py、即梦AI视频.py、可灵AI视频.py、天眼查.py 和 通义万相视频.py等多个数据抓取脚本&#10;- 新增 .idea/encodings.xml 文件，配置项目文件编码" />
     <MESSAGE value="feat(getSaWeb): 新增多个数据抓取脚本&#10;&#10;- 新增 pika 视频保存为列表脚本&#10;- 新增天眼查 数据抓取脚本&#10;- 新增 上海政府采购网合同 信息抓取脚本" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(getSaWeb): 新增多个数据抓取脚本&#10;&#10;- 新增 pika 视频保存为列表脚本&#10;- 新增天眼查 数据抓取脚本&#10;- 新增 上海政府采购网合同 信息抓取脚本" />
+    <MESSAGE value="1" />
+    <MESSAGE value="feat(getSaWeb): 新增多个数据处理和分析脚本&#10;&#10;- 新增上市A股公司数据处理脚本，用于处理供应商和股票公司数据&#10;- 新增图片和视频下载脚本，可从网站抓取多媒体内容&#10;- 新增IPv6获取脚本，用于获取和发送网络配置信息&#10;- 新增新浪科技新闻数据分析脚本，包括爬虫和数据处理模块- 新增文件和数据清理工具脚本，用于删除无效或重复的文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(getSaWeb): 新增多个数据处理和分析脚本&#10;&#10;- 新增上市A股公司数据处理脚本，用于处理供应商和股票公司数据&#10;- 新增图片和视频下载脚本，可从网站抓取多媒体内容&#10;- 新增IPv6获取脚本，用于获取和发送网络配置信息&#10;- 新增新浪科技新闻数据分析脚本，包括爬虫和数据处理模块- 新增文件和数据清理工具脚本，用于删除无效或重复的文件" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
