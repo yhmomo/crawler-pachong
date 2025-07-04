@@ -1,0 +1,26 @@
+[
+  {
+    "domain": "www.yuketang.cn",
+    "name": "sessionid",
+    "path": "/",
+    "value": "w6od7u56v5sgg7hftt4g2hpv3axlidwl"
+  },
+  {
+    "domain": "www.yuketang.cn",
+    "name": "csrftoken",
+    "path": "/",
+    "value": "tUtWWfOu5O8dOd5ULBk6TU5UAKOV0BBV"
+  },
+  {
+    "domain": "www.yuketang.cn",
+    "name": "django_language",
+    "path": "/",
+    "value": "zh-cn"
+  },
+  {
+    "domain": "www.yuketang.cn",
+    "name": "login_type",
+    "path": "/",
+    "value": "WX"
+  }
+]

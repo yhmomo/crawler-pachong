@@ -1,0 +1,931 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_INJECTED_CODE" value="false" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="270953fb-1095-47f7-a384-aa94f38c5733" name="更改" comment="feat(getSaWeb): 新增多个数据抓取脚本&#10;&#10;- 新增 pika 视频保存为列表脚本&#10;- 新增天眼查 数据抓取脚本&#10;- 新增 上海政府采购网合同 信息抓取脚本">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getSaWeb/上市A股公司/东方财富A股公司.py" beforeDir="false" afterPath="$PROJECT_DIR$/getSaWeb/上市A股公司/获取东方财富A股公司.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getSaWeb/上市A股公司/公司名称.py" beforeDir="false" afterPath="$PROJECT_DIR$/getSaWeb/上市A股公司/获取公司名称.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform)); sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo, NoAppException&#10;for module in [&quot;main.py&quot;, &quot;wsgi.py&quot;, &quot;app.py&quot;]:&#10;    try: locals().update(ScriptInfo(app_import_path=module, create_app=None).load_app().make_shell_context()); print(&quot;\nFlask App: %s&quot; % app.import_name); break&#10;    except NoAppException: pass">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform)); sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo, NoAppException&#10;for module in [&quot;main.py&quot;, &quot;wsgi.py&quot;, &quot;app.py&quot;]:&#10;    try: locals().update(ScriptInfo(app_import_path=module, create_app=None).load_app().make_shell_context()); print(&quot;\nFlask App: %s&quot; % app.import_name); break&#10;    except NoAppException: pass" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;yhmomo&quot;
+  }
+}</component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="5f1704b5-3ae9-4678-84e2-5430c42bdc32" />
+  </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:/yhmomo/crawler-pachong.git&quot;,
+    &quot;accountId&quot;: &quot;5f1704b5-3ae9-4678-84e2-5430c42bdc32&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2y94hOh41iANwl22LdDB790flMQ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript 调试.text.html.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Node.js.1.js.executor": "Run",
+    "Python.1 (1).executor": "Run",
+    "Python.1.executor": "Run",
+    "Python.2.executor": "Run",
+    "Python.DAF_get (1).executor": "Run",
+    "Python.Image_to_PDF  (1).executor": "Run",
+    "Python.Strclean.executor": "Debug",
+    "Python.__init__.executor": "Run",
+    "Python.del_FD (1).executor": "Run",
+    "Python.del_FD.executor": "Run",
+    "Python.del_mp4.executor": "Run",
+    "Python.general_crack.executor": "Run",
+    "Python.get_cangcuc (1).executor": "Run",
+    "Python.get_ipv6 (1).executor": "Run",
+    "Python.get_sina (1).executor": "Run",
+    "Python.get_tool.executor": "Run",
+    "Python.ipv6.executor": "Run",
+    "Python.main (1).executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.pika视频下载.executor": "Run",
+    "Python.reStr.executor": "Run",
+    "Python.szggzy.executor": "Run",
+    "Python.text (1).executor": "Run",
+    "Python.text.executor": "Run",
+    "Python.vidu视频 (1).executor": "Run",
+    "Python.上海政府采购网合同.executor": "Debug",
+    "Python.公司名称.executor": "Run",
+    "Python.动漫图片获取.executor": "Run",
+    "Python.即梦视频 (1).executor": "Debug",
+    "Python.图片检测.executor": "Run",
+    "Python.图片获取.executor": "Run",
+    "Python.图片转PDF.executor": "Run",
+    "Python.天眼查 (1).executor": "Debug",
+    "Python.天眼查.executor": "Run",
+    "Python.宝安区.executor": "Run",
+    "Python.整合表.executor": "Run",
+    "Python.环水集团.executor": "Run",
+    "Python.电影评价.executor": "Run",
+    "Python.获取天眼查链接.executor": "Run",
+    "Python.补充.executor": "Run",
+    "Python.表格初始化 (1).executor": "Run",
+    "Python.视频获取 (1).executor": "Run",
+    "Python.视频获取.executor": "Run",
+    "Python.请求PDF转图片文字.executor": "Run",
+    "Python.豆瓣电影top250 (1).executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/Python/crawler-pachong",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "advanced.settings",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "repository"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\crawler-pachong\getSaWeb\上市A股公司" />
+      <recent name="D:\crawler-pachong\getSaWeb\爬虫培训招标" />
+      <recent name="D:\crawler-pachong" />
+      <recent name="D:\crawler-pachong\getSaWeb" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\crawler-pachong\getSaWeb\获取地址" />
+      <recent name="D:\crawler-pachong\getSaWeb\text" />
+      <recent name="D:\crawler-pachong\Tool\扫描PDF文字" />
+      <recent name="D:\crawler-pachong" />
+      <recent name="D:\crawler-pachong\getSaWeb\PDF识别" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.2">
+    <configuration name="天眼查 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="爬虫" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/getSaWeb/上市A股公司" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getSaWeb/上市A股公司/天眼查.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="天眼查 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="爬虫" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/getSaWeb/上市A股公司" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getSaWeb/上市A股公司/天眼查.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="天眼查 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="爬虫" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/getSaWeb/上市A股公司" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getSaWeb/上市A股公司/天眼查.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="电影评价" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="爬虫" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/getSaWeb/豆瓣TOP250" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getSaWeb/豆瓣TOP250/电影评价.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="爬虫" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/getSaWeb/上市A股公司" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getSaWeb/上市A股公司/1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="爬虫" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/getSaWeb/上市A股公司" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getSaWeb/上市A股公司/2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="获取天眼查链接" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="爬虫" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/getSaWeb/上市A股公司" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getSaWeb/上市A股公司/获取天眼查链接.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="公司名称" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="爬虫" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/getSaWeb/上市A股公司" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getSaWeb/上市A股公司/公司名称.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="上海政府采购网合同" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="爬虫" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/getSaWeb/text" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getSaWeb/text/上海政府采购网合同.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="坪山区" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="爬虫" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/getSaWeb/爬虫培训招标" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:\crawler-pachong\getSaWeb\爬虫培训招标\坪山区.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="补充" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="爬虫" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/getSaWeb/爬虫培训招标" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getSaWeb/爬虫培训招标/补充.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="爬虫" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/getSaWeb" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getSaWeb/__init__.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="text" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="爬虫" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/getSaWeb/text" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getSaWeb/text/text.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.2" />
+        <item itemvalue="Python.1" />
+        <item itemvalue="Python.__init__" />
+        <item itemvalue="Python.天眼查 (1)" />
+        <item itemvalue="Python.text" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-PY-251.26927.74" />
+        <option value="bundled-python-sdk-657d8234b839-64d779b69b7a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.26927.74" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="270953fb-1095-47f7-a384-aa94f38c5733" name="更改" comment="" />
+      <created>1749233574051</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1749233574051</updated>
+      <workItem from="1749233575664" duration="830000" />
+      <workItem from="1749234415029" duration="50000" />
+      <workItem from="1749234473985" duration="3125000" />
+      <workItem from="1749237893898" duration="285000" />
+      <workItem from="1749238185783" duration="5455000" />
+      <workItem from="1749243663164" duration="37000" />
+      <workItem from="1749273603362" duration="23932000" />
+      <workItem from="1749319061362" duration="16000" />
+      <workItem from="1749319093470" duration="102000" />
+      <workItem from="1749319202384" duration="90000" />
+      <workItem from="1749319299835" duration="34424000" />
+      <workItem from="1749407417862" duration="161000" />
+      <workItem from="1749408374147" duration="13000" />
+      <workItem from="1749408398557" duration="85000" />
+      <workItem from="1749408493570" duration="598000" />
+      <workItem from="1749409273183" duration="30053000" />
+      <workItem from="1749477500217" duration="29170000" />
+      <workItem from="1749563603518" duration="4061000" />
+      <workItem from="1749569847923" duration="1782000" />
+      <workItem from="1749662511545" duration="2448000" />
+      <workItem from="1749666513329" duration="1598000" />
+      <workItem from="1749738914750" duration="183000" />
+      <workItem from="1749742764844" duration="137000" />
+      <workItem from="1749743706864" duration="4207000" />
+      <workItem from="1749753816450" duration="26000" />
+      <workItem from="1749757469055" duration="423000" />
+      <workItem from="1749758011217" duration="1567000" />
+      <workItem from="1749771417205" duration="26000" />
+      <workItem from="1749771954569" duration="1124000" />
+      <workItem from="1749790620575" duration="1224000" />
+      <workItem from="1749813991484" duration="900000" />
+      <workItem from="1749875016022" duration="656000" />
+      <workItem from="1750163214262" duration="42000" />
+      <workItem from="1750163313723" duration="52000" />
+      <workItem from="1750247889525" duration="103000" />
+      <workItem from="1750333019604" duration="1843000" />
+      <workItem from="1750335386384" duration="2879000" />
+      <workItem from="1750409582385" duration="821000" />
+      <workItem from="1750410418614" duration="142000" />
+      <workItem from="1750411031791" duration="15000" />
+      <workItem from="1750572243106" duration="2112000" />
+      <workItem from="1750575380119" duration="602000" />
+      <workItem from="1750576183089" duration="8119000" />
+      <workItem from="1750598730917" duration="163000" />
+      <workItem from="1750598969510" duration="308000" />
+      <workItem from="1750601545802" duration="13000" />
+      <workItem from="1750603101103" duration="413000" />
+      <workItem from="1750603941084" duration="7000" />
+      <workItem from="1750603967917" duration="987000" />
+      <workItem from="1750605015694" duration="938000" />
+      <workItem from="1750606520010" duration="5899000" />
+      <workItem from="1750612476381" duration="320000" />
+      <workItem from="1750641213761" duration="246000" />
+      <workItem from="1750659054825" duration="403000" />
+      <workItem from="1750675772232" duration="2529000" />
+      <workItem from="1750678544202" duration="118000" />
+      <workItem from="1750678672782" duration="153000" />
+      <workItem from="1750678844579" duration="22454000" />
+      <workItem from="1750755384205" duration="9510000" />
+      <workItem from="1750776804942" duration="6973000" />
+      <workItem from="1750783998125" duration="182000" />
+      <workItem from="1750784194476" duration="158000" />
+      <workItem from="1750836507534" duration="240000" />
+      <workItem from="1750850950889" duration="2042000" />
+      <workItem from="1750907562854" duration="629000" />
+      <workItem from="1750930042129" duration="1472000" />
+      <workItem from="1750991608538" duration="2420000" />
+      <workItem from="1751006296688" duration="5618000" />
+      <workItem from="1751040848723" duration="1383000" />
+      <workItem from="1751042327938" duration="3093000" />
+      <workItem from="1751109337525" duration="1974000" />
+      <workItem from="1751175617688" duration="5429000" />
+      <workItem from="1751182070791" duration="854000" />
+      <workItem from="1751183405416" duration="5592000" />
+      <workItem from="1751258195348" duration="33365000" />
+      <workItem from="1751372512789" duration="26550000" />
+      <workItem from="1751434308279" duration="499000" />
+      <workItem from="1751434815193" duration="610000" />
+      <workItem from="1751460080287" duration="2528000" />
+      <workItem from="1751472069721" duration="7459000" />
+      <workItem from="1751479691034" duration="2808000" />
+      <workItem from="1751509757730" duration="16316000" />
+      <workItem from="1751554451863" duration="122000" />
+      <workItem from="1751554601088" duration="2955000" />
+      <workItem from="1751607654692" duration="910000" />
+      <workItem from="1751632783605" duration="4268000" />
+      <workItem from="1751657696568" duration="61000" />
+      <workItem from="1751657810644" duration="52000" />
+      <workItem from="1751657872576" duration="60000" />
+      <workItem from="1751658149119" duration="468000" />
+      <workItem from="1751658629113" duration="467000" />
+    </task>
+    <task id="LOCAL-00001" summary="爬虫测试代码">
+      <option name="closed" value="true" />
+      <created>1749236273861</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1749236273861</updated>
+    </task>
+    <task id="LOCAL-00002" summary="爬虫测试代码">
+      <option name="closed" value="true" />
+      <created>1749237358455</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1749237358455</updated>
+    </task>
+    <task id="LOCAL-00003" summary="爬虫测试代码">
+      <option name="closed" value="true" />
+      <created>1749237685906</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1749237685906</updated>
+    </task>
+    <task id="LOCAL-00004" summary="爬虫测试代码">
+      <option name="closed" value="true" />
+      <created>1749237750316</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1749237750316</updated>
+    </task>
+    <task id="LOCAL-00005" summary="爬虫测试代码">
+      <option name="closed" value="true" />
+      <created>1749243686761</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1749243686761</updated>
+    </task>
+    <task id="LOCAL-00006" summary="imgPT爬虫">
+      <option name="closed" value="true" />
+      <created>1749311374273</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1749311374273</updated>
+    </task>
+    <task id="LOCAL-00007" summary="cangcuc图片视频爬虫">
+      <option name="closed" value="true" />
+      <created>1749330828695</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1749330828695</updated>
+    </task>
+    <task id="LOCAL-00008" summary="优化——cangcuc图片视频">
+      <option name="closed" value="true" />
+      <created>1749379281017</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1749379281017</updated>
+    </task>
+    <task id="LOCAL-00009" summary="优化代码,启用多线程并发，设置假死时间，重新代码">
+      <option name="closed" value="true" />
+      <created>1749380694428</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1749380694428</updated>
+    </task>
+    <task id="LOCAL-00010" summary="优化代码,启用多线程并发，设置假死时间，重新代码">
+      <option name="closed" value="true" />
+      <created>1749429092609</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1749429092609</updated>
+    </task>
+    <task id="LOCAL-00011" summary="优化代码,启用多线程并发，设置假死时间，重新代码">
+      <option name="closed" value="true" />
+      <created>1749444277688</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1749444277688</updated>
+    </task>
+    <task id="LOCAL-00012" summary="优化代码">
+      <option name="closed" value="true" />
+      <created>1749449309999</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1749449309999</updated>
+    </task>
+    <task id="LOCAL-00013" summary="优化代码，优化项目结构">
+      <option name="closed" value="true" />
+      <created>1749495229600</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1749495229600</updated>
+    </task>
+    <task id="LOCAL-00014" summary="优化转pdf代码">
+      <option name="closed" value="true" />
+      <created>1749521254029</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1749521254029</updated>
+    </task>
+    <task id="LOCAL-00015" summary="爬取代码优化">
+      <option name="closed" value="true" />
+      <created>1749542732978</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1749542732978</updated>
+    </task>
+    <task id="LOCAL-00016" summary="添加代码">
+      <option name="closed" value="true" />
+      <created>1749666155406</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1749666155406</updated>
+    </task>
+    <task id="LOCAL-00017" summary="添加代码">
+      <option name="closed" value="true" />
+      <created>1750609868945</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1750609868945</updated>
+    </task>
+    <task id="LOCAL-00018" summary="refactor(项目结构): 重新组织文件结构并优化部分代码- 重新命名文件夹和文件，使其更加清晰和有组织- 调整 PDF 识别相关代码，将其独立为一个子模块&#10;- 优化图片下载代码，提高可读性&#10;- 更新项目设置和依赖项">
+      <option name="closed" value="true" />
+      <created>1750777689832</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1750777689832</updated>
+    </task>
+    <task id="LOCAL-00019" summary="build(deps): 添加 axios 作为 crawler-pachong 的依赖&#10;&#10;- 新增 axios 1.10.0 版本作为依赖- 添加多个与 axios 相关的子依赖，包括 call-bind-apply-helpers、es-define-property 等&#10;- 新增 .eslintrc、.nycrc 等配置文件以支持代码规范和测试覆盖率报告">
+      <option name="closed" value="true" />
+      <created>1750777728715</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1750777728715</updated>
+    </task>
+    <task id="LOCAL-00020" summary="移动">
+      <option name="closed" value="true" />
+      <created>1750777843253</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1750777843253</updated>
+    </task>
+    <task id="LOCAL-00021" summary="移动">
+      <option name="closed" value="true" />
+      <created>1750778002782</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1750778002782</updated>
+    </task>
+    <task id="LOCAL-00022" summary="feat(ruishu): 添加阿里云验证码破解功能&#10;&#10;- 新增 AliCaptcha.py 文件，实现阿里云验证码的破解逻辑&#10;- 添加 config.py 文件，配置 gunicorn 服务器参数&#10;- 实现了验证码破解的各个环节，包括设备数据解密、鼠标轨迹生成、签名生成等&#10;- 集成了 loguru 日志库和 retry 重试装饰器">
+      <option name="closed" value="true" />
+      <created>1750778238840</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1750778238840</updated>
+    </task>
+    <task id="LOCAL-00023" summary="feat(ruishu): 添加阿里云验证码破解功能&#10;&#10;- 新增 AliCaptcha.py 文件，实现阿里云验证码的破解逻辑&#10;- 添加 config.py 文件，配置 gunicorn 服务器参数&#10;- 实现了验证码破解的各个环节，包括设备数据解密、鼠标轨迹生成、签名生成等&#10;- 集成了 loguru 日志库和 retry 重试装饰器">
+      <option name="closed" value="true" />
+      <created>1750778294757</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1750778294757</updated>
+    </task>
+    <task id="LOCAL-00024" summary="feat(getSaWeb): 添加获取 IPv6 地址功能并发送邮件&#10;&#10;- 新增 get_ipv6.py 文件实现以下功能：&#10;  -通过 ARP 表和 NDP邻居表获取设备的 IPv6 地址&#10;  - 从第三方 API 获取公网 IPv4 和 IPv6 地址&#10;  -生成包含网络配置信息的 HTML邮件内容&#10;  - 使用 SMTP 发送邮件给指定接收者">
+      <option name="closed" value="true" />
+      <created>1750778722484</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1750778722484</updated>
+    </task>
+    <task id="LOCAL-00025" summary="1">
+      <option name="closed" value="true" />
+      <created>1750779468933</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1750779468933</updated>
+    </task>
+    <task id="LOCAL-00026" summary="feat(表格PDF): 添加表格初始化脚本&#10;&#10;- 新增表格初始化.py脚本，用于处理Excel文件&#10;- 读取指定Excel文件，清理数据并保存到新的Excel文件&#10;- 自动调整列宽以适应内容&#10;- 主要功能包括：&#10;  - 读取Excel文件并解析所有工作表 - 对每一列应用清理字符串函数&#10;  - 删除包含特定关键字的行&#10;  - 删除全为空值的列&#10;  - 重置索引并保存清理后的数据">
+      <option name="closed" value="true" />
+      <created>1750784249002</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1750784249002</updated>
+    </task>
+    <task id="LOCAL-00027" summary="feat(扫描PDF文字): 优化 PDF 文字提取和图片合并功能&#10;&#10;- 重命名项目文件夹为&quot;扫描PDF文字&quot;&#10;- 更新 main.py 文件，增加图片合并和文字提取功能&#10;- 删除旧的输出文件，合并图片和文字内容&#10;- 优化字符串清理函数，增加更多特殊字符的替换">
+      <option name="closed" value="true" />
+      <created>1751180938204</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1751180938204</updated>
+    </task>
+    <task id="LOCAL-00028" summary="添加爬虫代码">
+      <option name="closed" value="true" />
+      <created>1751181009484</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1751181009484</updated>
+    </task>
+    <task id="LOCAL-00029" summary="refactor(Tool): 删除扫描 PDF 文字功能&#10;&#10;- 移除了 pdfimgtxet() 和 pdfto_img() 函数&#10;- 删除了与扫描 PDF 文字相关的库导入&#10;- 清除了示例代码和相关注释">
+      <option name="closed" value="true" />
+      <created>1751181045779</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1751181045779</updated>
+    </task>
+    <task id="LOCAL-00030" summary="fix(电影): 优化外文名处理逻辑&#10;&#10;- 移除了不必要的变量声明和条件判断&#10;- 简化了外文名的提取和处理流程&#10;-增加了对其他名称列表为空时的处理&#10;- 优化了代码结构，提高了可读性和维护性">
+      <option name="closed" value="true" />
+      <created>1751182911427</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1751182911427</updated>
+    </task>
+    <task id="LOCAL-00031" summary="(getfeatSaWeb): 新增多个数据抓取脚本&#10;&#10;- 新增 del_mp4.py 脚本，用于删除无效的图片和视频文件&#10;- 新增 ieee论文.py 脚本，用于抓取 IEEE 论文信息&#10;- 新增 vidu视频.py、即梦AI视频.py、可灵AI视频.py、天眼查.py 和 通义万相视频.py等多个数据抓取脚本&#10;- 新增 .idea/encodings.xml 文件，配置项目文件编码">
+      <option name="closed" value="true" />
+      <created>1751327441487</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1751327441487</updated>
+    </task>
+    <task id="LOCAL-00032" summary="feat(getSaWeb): 新增多个数据抓取脚本&#10;&#10;- 新增 pika 视频保存为列表脚本&#10;- 新增天眼查 数据抓取脚本&#10;- 新增 上海政府采购网合同 信息抓取脚本">
+      <option name="closed" value="true" />
+      <created>1751554663418</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1751554663418</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="爬虫测试代码" />
+    <MESSAGE value="imgPT爬虫" />
+    <MESSAGE value="cangcuc图片视频爬虫" />
+    <MESSAGE value="优化——cangcuc图片视频" />
+    <MESSAGE value="优化代码,启用多线程并发，设置假死时间，重新代码" />
+    <MESSAGE value="优化代码" />
+    <MESSAGE value="优化代码，优化项目结构" />
+    <MESSAGE value="优化转pdf代码" />
+    <MESSAGE value="爬取代码优化" />
+    <MESSAGE value="添加代码" />
+    <MESSAGE value="refactor(项目结构): 重新组织文件结构并优化部分代码- 重新命名文件夹和文件，使其更加清晰和有组织- 调整 PDF 识别相关代码，将其独立为一个子模块&#10;- 优化图片下载代码，提高可读性&#10;- 更新项目设置和依赖项" />
+    <MESSAGE value="build(deps): 添加 axios 作为 crawler-pachong 的依赖&#10;&#10;- 新增 axios 1.10.0 版本作为依赖- 添加多个与 axios 相关的子依赖，包括 call-bind-apply-helpers、es-define-property 等&#10;- 新增 .eslintrc、.nycrc 等配置文件以支持代码规范和测试覆盖率报告" />
+    <MESSAGE value="移动" />
+    <MESSAGE value="feat(ruishu): 添加阿里云验证码破解功能&#10;&#10;- 新增 AliCaptcha.py 文件，实现阿里云验证码的破解逻辑&#10;- 添加 config.py 文件，配置 gunicorn 服务器参数&#10;- 实现了验证码破解的各个环节，包括设备数据解密、鼠标轨迹生成、签名生成等&#10;- 集成了 loguru 日志库和 retry 重试装饰器" />
+    <MESSAGE value="feat(getSaWeb): 添加获取 IPv6 地址功能并发送邮件&#10;&#10;- 新增 get_ipv6.py 文件实现以下功能：&#10;  -通过 ARP 表和 NDP邻居表获取设备的 IPv6 地址&#10;  - 从第三方 API 获取公网 IPv4 和 IPv6 地址&#10;  -生成包含网络配置信息的 HTML邮件内容&#10;  - 使用 SMTP 发送邮件给指定接收者" />
+    <MESSAGE value="1" />
+    <MESSAGE value="feat(表格PDF): 添加表格初始化脚本&#10;&#10;- 新增表格初始化.py脚本，用于处理Excel文件&#10;- 读取指定Excel文件，清理数据并保存到新的Excel文件&#10;- 自动调整列宽以适应内容&#10;- 主要功能包括：&#10;  - 读取Excel文件并解析所有工作表 - 对每一列应用清理字符串函数&#10;  - 删除包含特定关键字的行&#10;  - 删除全为空值的列&#10;  - 重置索引并保存清理后的数据" />
+    <MESSAGE value="feat(扫描PDF文字): 优化 PDF 文字提取和图片合并功能&#10;&#10;- 重命名项目文件夹为&quot;扫描PDF文字&quot;&#10;- 更新 main.py 文件，增加图片合并和文字提取功能&#10;- 删除旧的输出文件，合并图片和文字内容&#10;- 优化字符串清理函数，增加更多特殊字符的替换" />
+    <MESSAGE value="添加爬虫代码" />
+    <MESSAGE value="refactor(Tool): 删除扫描 PDF 文字功能&#10;&#10;- 移除了 pdfimgtxet() 和 pdfto_img() 函数&#10;- 删除了与扫描 PDF 文字相关的库导入&#10;- 清除了示例" />
+    <MESSAGE value="fix(电影): 优化外文名处理逻辑&#10;&#10;- 移除了不必要的变量声明和条件判断&#10;- 简化了外文名的提取和处理流程&#10;-增加了对其他名称列表为空时的处理&#10;- 优化了代码结构，提高了可读性和维护性" />
+    <MESSAGE value="(getfeatSaWeb): 新增多个数据抓取脚本&#10;&#10;- 新增 del_mp4.py 脚本，用于删除无效的图片和视频文件&#10;- 新增 ieee论文.py 脚本，用于抓取 IEEE 论文信息&#10;- 新增 vidu视频.py、即梦AI视频.py、可灵AI视频.py、天眼查.py 和 通义万相视频.py等多个数据抓取脚本&#10;- 新增 .idea/encodings.xml 文件，配置项目文件编码" />
+    <MESSAGE value="feat(getSaWeb): 新增多个数据抓取脚本&#10;&#10;- 新增 pika 视频保存为列表脚本&#10;- 新增天眼查 数据抓取脚本&#10;- 新增 上海政府采购网合同 信息抓取脚本" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(getSaWeb): 新增多个数据抓取脚本&#10;&#10;- 新增 pika 视频保存为列表脚本&#10;- 新增天眼查 数据抓取脚本&#10;- 新增 上海政府采购网合同 信息抓取脚本" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="NON_MODAL_COMMIT_POSTPONE_SLOW_CHECKS" value="false" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/getSaWeb/上市A股公司/天眼查.py</url>
+          <line>56</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/crawler_pachong$pika.coverage" NAME="pika视频下载 覆盖结果" MODIFIED="1751380904328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/text" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$Image_to_PDF___1_.coverage" NAME="Image_to_PDF  (1) 覆盖结果" MODIFIED="1749492117937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$del_mp4.coverage" NAME="del_mp4 覆盖结果" MODIFIED="1751286100863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$.coverage" NAME="电影评价 覆盖结果" MODIFIED="1751608495773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/豆瓣TOP250" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$main.coverage" NAME="main 覆盖结果" MODIFIED="1751042659022" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool/扫描PDF文字" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$DAF_get__1_.coverage" NAME="DAF_get (1) 覆盖结果" MODIFIED="1749492004064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$Strclean.coverage" NAME="Strclean 覆盖结果" MODIFIED="1750700127108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$text.coverage" NAME="text 覆盖结果" MODIFIED="1751478208117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/text" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$1.coverage" NAME="1 覆盖结果" MODIFIED="1751636657665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/上市A股公司" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$get_ipv6__1_.coverage" NAME="get_ipv6 (1) 覆盖结果" MODIFIED="1749875074081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$__1_.coverage" NAME="天眼查 (1) 覆盖结果" MODIFIED="1751523312482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/上市A股公司" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$reStr.coverage" NAME="reStr 覆盖结果" MODIFIED="1750695429672" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$main__1_.coverage" NAME="main (1) 覆盖结果" MODIFIED="1750732108727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/PDF识别" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$top250__1_.coverage" NAME="豆瓣电影top250 (1) 覆盖结果" MODIFIED="1751182858210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/text" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$text__1_.coverage" NAME="text (1) 覆盖结果" MODIFIED="1750606703714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$get_cangcuc__1_.coverage" NAME="get_cangcuc (1) 覆盖结果" MODIFIED="1749541732977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$szggzy.coverage" NAME="szggzy 覆盖结果" MODIFIED="1750701519872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/爬虫培训招标" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$del_FD.coverage" NAME="del_FD 覆盖结果" MODIFIED="1751285726787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$general_crack.coverage" NAME="general_crack 覆盖结果" MODIFIED="1750930824338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../ruishu" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$get_tool.coverage" NAME="get_tool 覆盖结果" MODIFIED="1749570779883" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$2.coverage" NAME="2 覆盖结果" MODIFIED="1751637117428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/上市A股公司" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$ipv6.coverage" NAME="ipv6 覆盖结果" MODIFIED="1749666078730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$PDF.coverage" NAME="请求PDF转图片文字 覆盖结果" MODIFIED="1751044555131" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool/扫描PDF文字" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$__init__.coverage" NAME="__init__ 覆盖结果" MODIFIED="1751633102783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$1__1_.coverage" NAME="1 (1) 覆盖结果" MODIFIED="1751110802613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/text" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$vidu__1_.coverage" NAME="vidu视频 (1) 覆盖结果" MODIFIED="1751325966713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/text" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$get_sina__1_.coverage" NAME="get_sina (1) 覆盖结果" MODIFIED="1750641364459" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$del_FD__1_.coverage" NAME="del_FD (1) 覆盖结果" MODIFIED="1749493524469" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool" />
+  </component>
+</project>
