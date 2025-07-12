@@ -7,7 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="270953fb-1095-47f7-a384-aa94f38c5733" name="更改" comment="feat(getSaWeb): 新增多个数据处理和分析脚本&#10;&#10;- 新增上市A股公司数据处理脚本，用于处理供应商和股票公司数据&#10;- 新增图片和视频下载脚本，可从网站抓取多媒体内容&#10;- 新增IPv6获取脚本，用于获取和发送网络配置信息&#10;- 新增新浪科技新闻数据分析脚本，包括爬虫和数据处理模块- 新增文件和数据清理工具脚本，用于删除无效或重复的文件" />
+    <list default="true" id="270953fb-1095-47f7-a384-aa94f38c5733" name="更改" comment="feat(getSaWeb): 添加多个文本抓取脚本&#10;&#10;- 新增 1.py、bqgda小说.py 和 lingke_text.py三个文本抓取脚本&#10;- 分别用于抓取维基百科、小说网站和领英网站的文本内容&#10;- 优化了请求头设置和 cookie 处理，提高了抓取成功率">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +37,12 @@
   </component>
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -67,76 +75,76 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JavaScript 调试.text.html.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Node.js.1.js.executor": "Run",
-    "Python.1 (1).executor": "Run",
-    "Python.1.executor": "Run",
-    "Python.2.executor": "Run",
-    "Python.DAF_get (1).executor": "Run",
-    "Python.Image_to_PDF  (1).executor": "Run",
-    "Python.Strclean.executor": "Debug",
-    "Python.__init__.executor": "Run",
-    "Python.del_FD (1).executor": "Run",
-    "Python.del_FD.executor": "Run",
-    "Python.del_mp4.executor": "Run",
-    "Python.general_crack.executor": "Run",
-    "Python.get_cangcuc (1).executor": "Run",
-    "Python.get_ipv6 (1).executor": "Run",
-    "Python.get_sina (1).executor": "Run",
-    "Python.get_tool.executor": "Run",
-    "Python.ipv6.executor": "Run",
-    "Python.main (1).executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.pika视频下载.executor": "Run",
-    "Python.reStr.executor": "Run",
-    "Python.szggzy.executor": "Run",
-    "Python.text (1).executor": "Run",
-    "Python.text.executor": "Run",
-    "Python.vidu视频 (1).executor": "Run",
-    "Python.上海政府采购网合同.executor": "Debug",
-    "Python.公司名称.executor": "Run",
-    "Python.动漫图片获取.executor": "Run",
-    "Python.即梦视频 (1).executor": "Debug",
-    "Python.图片检测.executor": "Run",
-    "Python.图片获取.executor": "Run",
-    "Python.图片转PDF.executor": "Run",
-    "Python.天眼查 (1).executor": "Debug",
-    "Python.天眼查.executor": "Run",
-    "Python.宝安区.executor": "Run",
-    "Python.整合表.executor": "Run",
-    "Python.环水集团.executor": "Run",
-    "Python.电影评价.executor": "Run",
-    "Python.获取天眼查链接.executor": "Run",
-    "Python.补充.executor": "Run",
-    "Python.表格初始化 (1).executor": "Run",
-    "Python.视频获取 (1).executor": "Run",
-    "Python.视频获取.executor": "Run",
-    "Python.请求PDF转图片文字.executor": "Run",
-    "Python.豆瓣电影top250 (1).executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/Python/crawler-pachong",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "vcs.Git",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript 调试.text.html.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Node.js.1.js.executor&quot;: &quot;Run&quot;,
+    &quot;Python.1 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.DAF_get (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.Image_to_PDF  (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.Strclean.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
+    &quot;Python.del_FD (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.del_FD.executor&quot;: &quot;Run&quot;,
+    &quot;Python.del_mp4.executor&quot;: &quot;Run&quot;,
+    &quot;Python.general_crack.executor&quot;: &quot;Run&quot;,
+    &quot;Python.get_cangcuc (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.get_ipv6 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.get_sina (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.get_tool.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ipv6.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.pika视频下载.executor&quot;: &quot;Run&quot;,
+    &quot;Python.reStr.executor&quot;: &quot;Run&quot;,
+    &quot;Python.szggzy.executor&quot;: &quot;Run&quot;,
+    &quot;Python.text (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.text.executor&quot;: &quot;Run&quot;,
+    &quot;Python.vidu视频 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.上海政府采购网合同.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.公司名称.executor&quot;: &quot;Run&quot;,
+    &quot;Python.动漫图片获取.executor&quot;: &quot;Run&quot;,
+    &quot;Python.即梦视频 (1).executor&quot;: &quot;Debug&quot;,
+    &quot;Python.图片检测.executor&quot;: &quot;Run&quot;,
+    &quot;Python.图片获取.executor&quot;: &quot;Run&quot;,
+    &quot;Python.图片转PDF.executor&quot;: &quot;Run&quot;,
+    &quot;Python.天眼查 (1).executor&quot;: &quot;Debug&quot;,
+    &quot;Python.天眼查.executor&quot;: &quot;Run&quot;,
+    &quot;Python.宝安区.executor&quot;: &quot;Run&quot;,
+    &quot;Python.整合表.executor&quot;: &quot;Run&quot;,
+    &quot;Python.环水集团.executor&quot;: &quot;Run&quot;,
+    &quot;Python.电影评价.executor&quot;: &quot;Run&quot;,
+    &quot;Python.获取天眼查链接.executor&quot;: &quot;Run&quot;,
+    &quot;Python.补充.executor&quot;: &quot;Run&quot;,
+    &quot;Python.表格初始化 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.视频获取 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.视频获取.executor&quot;: &quot;Run&quot;,
+    &quot;Python.请求PDF转图片文字.executor&quot;: &quot;Run&quot;,
+    &quot;Python.豆瓣电影top250 (1).executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Python/crawler-pachong&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "ChangesTree.GroupingKeys": [
-      "repository"
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+      &quot;repository&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\crawler-pachong\getSaWeb\上市A股公司" />
@@ -570,6 +578,8 @@
       <workItem from="1751658149119" duration="468000" />
       <workItem from="1751658629113" duration="857000" />
       <workItem from="1751659494501" duration="113000" />
+      <workItem from="1752300021428" duration="9000" />
+      <workItem from="1752300047538" duration="28000" />
     </task>
     <task id="LOCAL-00001" summary="爬虫测试代码">
       <option name="closed" value="true" />
@@ -835,7 +845,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751659444053</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="feat(getSaWeb): 添加多个文本抓取脚本&#10;&#10;- 新增 1.py、bqgda小说.py 和 lingke_text.py三个文本抓取脚本&#10;- 分别用于抓取维基百科、小说网站和领英网站的文本内容&#10;- 优化了请求头设置和 cookie 处理，提高了抓取成功率">
+      <option name="closed" value="true" />
+      <created>1752299935111</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1752299935111</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -869,8 +887,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="爬虫测试代码" />
-    <MESSAGE value="imgPT爬虫" />
     <MESSAGE value="cangcuc图片视频爬虫" />
     <MESSAGE value="优化——cangcuc图片视频" />
     <MESSAGE value="优化代码,启用多线程并发，设置假死时间，重新代码" />
@@ -893,7 +909,10 @@
     <MESSAGE value="feat(getSaWeb): 新增多个数据抓取脚本&#10;&#10;- 新增 pika 视频保存为列表脚本&#10;- 新增天眼查 数据抓取脚本&#10;- 新增 上海政府采购网合同 信息抓取脚本" />
     <MESSAGE value="1" />
     <MESSAGE value="feat(getSaWeb): 新增多个数据处理和分析脚本&#10;&#10;- 新增上市A股公司数据处理脚本，用于处理供应商和股票公司数据&#10;- 新增图片和视频下载脚本，可从网站抓取多媒体内容&#10;- 新增IPv6获取脚本，用于获取和发送网络配置信息&#10;- 新增新浪科技新闻数据分析脚本，包括爬虫和数据处理模块- 新增文件和数据清理工具脚本，用于删除无效或重复的文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(getSaWeb): 新增多个数据处理和分析脚本&#10;&#10;- 新增上市A股公司数据处理脚本，用于处理供应商和股票公司数据&#10;- 新增图片和视频下载脚本，可从网站抓取多媒体内容&#10;- 新增IPv6获取脚本，用于获取和发送网络配置信息&#10;- 新增新浪科技新闻数据分析脚本，包括爬虫和数据处理模块- 新增文件和数据清理工具脚本，用于删除无效或重复的文件" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;getSaWeb/上市A股公司/简单天眼查查询.py" />
+    <MESSAGE value="fix(上市A股公司): 更新天眼查链接并优化数据获取&#10;&#10;- 修改1.py和2.py中的文件路径，使用相对路径替代绝对路径&#10;- 新增天眼查年份获取功能，实现对特定年份数据的抓取- 添加模拟浏览器获取天眼查链接的脚本，解决部分公司链接缺失问题&#10;- 优化数据处理流程，提高数据抓取的稳定性和效率" />
+    <MESSAGE value="feat(getSaWeb): 添加多个文本抓取脚本&#10;&#10;- 新增 1.py、bqgda小说.py 和 lingke_text.py三个文本抓取脚本&#10;- 分别用于抓取维基百科、小说网站和领英网站的文本内容&#10;- 优化了请求头设置和 cookie 处理，提高了抓取成功率" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(getSaWeb): 添加多个文本抓取脚本&#10;&#10;- 新增 1.py、bqgda小说.py 和 lingke_text.py三个文本抓取脚本&#10;- 分别用于抓取维基百科、小说网站和领英网站的文本内容&#10;- 优化了请求头设置和 cookie 处理，提高了抓取成功率" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
