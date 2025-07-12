@@ -7,10 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="270953fb-1095-47f7-a384-aa94f38c5733" name="更改" comment="feat(getSaWeb): 新增多个数据处理和分析脚本&#10;&#10;- 新增上市A股公司数据处理脚本，用于处理供应商和股票公司数据&#10;- 新增图片和视频下载脚本，可从网站抓取多媒体内容&#10;- 新增IPv6获取脚本，用于获取和发送网络配置信息&#10;- 新增新浪科技新闻数据分析脚本，包括爬虫和数据处理模块- 新增文件和数据清理工具脚本，用于删除无效或重复的文件">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="270953fb-1095-47f7-a384-aa94f38c5733" name="更改" comment="feat(getSaWeb): 新增多个数据处理和分析脚本&#10;&#10;- 新增上市A股公司数据处理脚本，用于处理供应商和股票公司数据&#10;- 新增图片和视频下载脚本，可从网站抓取多媒体内容&#10;- 新增IPv6获取脚本，用于获取和发送网络配置信息&#10;- 新增新浪科技新闻数据分析脚本，包括爬虫和数据处理模块- 新增文件和数据清理工具脚本，用于删除无效或重复的文件" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,82 +60,83 @@
 }</component>
   <component name="ProjectId" id="2y94hOh41iANwl22LdDB790flMQ" />
   <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaScript 调试.text.html.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Node.js.1.js.executor&quot;: &quot;Run&quot;,
-    &quot;Python.1 (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.DAF_get (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.Image_to_PDF  (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.Strclean.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
-    &quot;Python.del_FD (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.del_FD.executor&quot;: &quot;Run&quot;,
-    &quot;Python.del_mp4.executor&quot;: &quot;Run&quot;,
-    &quot;Python.general_crack.executor&quot;: &quot;Run&quot;,
-    &quot;Python.get_cangcuc (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.get_ipv6 (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.get_sina (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.get_tool.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ipv6.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.pika视频下载.executor&quot;: &quot;Run&quot;,
-    &quot;Python.reStr.executor&quot;: &quot;Run&quot;,
-    &quot;Python.szggzy.executor&quot;: &quot;Run&quot;,
-    &quot;Python.text (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.text.executor&quot;: &quot;Run&quot;,
-    &quot;Python.vidu视频 (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.上海政府采购网合同.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.公司名称.executor&quot;: &quot;Run&quot;,
-    &quot;Python.动漫图片获取.executor&quot;: &quot;Run&quot;,
-    &quot;Python.即梦视频 (1).executor&quot;: &quot;Debug&quot;,
-    &quot;Python.图片检测.executor&quot;: &quot;Run&quot;,
-    &quot;Python.图片获取.executor&quot;: &quot;Run&quot;,
-    &quot;Python.图片转PDF.executor&quot;: &quot;Run&quot;,
-    &quot;Python.天眼查 (1).executor&quot;: &quot;Debug&quot;,
-    &quot;Python.天眼查.executor&quot;: &quot;Run&quot;,
-    &quot;Python.宝安区.executor&quot;: &quot;Run&quot;,
-    &quot;Python.整合表.executor&quot;: &quot;Run&quot;,
-    &quot;Python.环水集团.executor&quot;: &quot;Run&quot;,
-    &quot;Python.电影评价.executor&quot;: &quot;Run&quot;,
-    &quot;Python.获取天眼查链接.executor&quot;: &quot;Run&quot;,
-    &quot;Python.补充.executor&quot;: &quot;Run&quot;,
-    &quot;Python.表格初始化 (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.视频获取 (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.视频获取.executor&quot;: &quot;Run&quot;,
-    &quot;Python.请求PDF转图片文字.executor&quot;: &quot;Run&quot;,
-    &quot;Python.豆瓣电影top250 (1).executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Python/crawler-pachong&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript 调试.text.html.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Node.js.1.js.executor": "Run",
+    "Python.1 (1).executor": "Run",
+    "Python.1.executor": "Run",
+    "Python.2.executor": "Run",
+    "Python.DAF_get (1).executor": "Run",
+    "Python.Image_to_PDF  (1).executor": "Run",
+    "Python.Strclean.executor": "Debug",
+    "Python.__init__.executor": "Run",
+    "Python.del_FD (1).executor": "Run",
+    "Python.del_FD.executor": "Run",
+    "Python.del_mp4.executor": "Run",
+    "Python.general_crack.executor": "Run",
+    "Python.get_cangcuc (1).executor": "Run",
+    "Python.get_ipv6 (1).executor": "Run",
+    "Python.get_sina (1).executor": "Run",
+    "Python.get_tool.executor": "Run",
+    "Python.ipv6.executor": "Run",
+    "Python.main (1).executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.pika视频下载.executor": "Run",
+    "Python.reStr.executor": "Run",
+    "Python.szggzy.executor": "Run",
+    "Python.text (1).executor": "Run",
+    "Python.text.executor": "Run",
+    "Python.vidu视频 (1).executor": "Run",
+    "Python.上海政府采购网合同.executor": "Debug",
+    "Python.公司名称.executor": "Run",
+    "Python.动漫图片获取.executor": "Run",
+    "Python.即梦视频 (1).executor": "Debug",
+    "Python.图片检测.executor": "Run",
+    "Python.图片获取.executor": "Run",
+    "Python.图片转PDF.executor": "Run",
+    "Python.天眼查 (1).executor": "Debug",
+    "Python.天眼查.executor": "Run",
+    "Python.宝安区.executor": "Run",
+    "Python.整合表.executor": "Run",
+    "Python.环水集团.executor": "Run",
+    "Python.电影评价.executor": "Run",
+    "Python.获取天眼查链接.executor": "Run",
+    "Python.补充.executor": "Run",
+    "Python.表格初始化 (1).executor": "Run",
+    "Python.视频获取 (1).executor": "Run",
+    "Python.视频获取.executor": "Run",
+    "Python.请求PDF转图片文字.executor": "Run",
+    "Python.豆瓣电影top250 (1).executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/Python/crawler-pachong",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "vcs.Git",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;ChangesTree.GroupingKeys&quot;: [
-      &quot;repository&quot;
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "repository"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\crawler-pachong\getSaWeb\上市A股公司" />
@@ -851,7 +849,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -911,14 +921,15 @@
     <SUITE FILE_PATH="coverage/crawler_pachong$pika.coverage" NAME="pika视频下载 覆盖结果" MODIFIED="1751380904328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/text" />
     <SUITE FILE_PATH="coverage/crawler_pachong$Image_to_PDF___1_.coverage" NAME="Image_to_PDF  (1) 覆盖结果" MODIFIED="1749492117937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool" />
     <SUITE FILE_PATH="coverage/crawler_pachong$del_mp4.coverage" NAME="del_mp4 覆盖结果" MODIFIED="1751286100863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool" />
-    <SUITE FILE_PATH="coverage/crawler_pachong$.coverage" NAME="电影评价 覆盖结果" MODIFIED="1751608495773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/豆瓣TOP250" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$.coverage" NAME="天眼查 覆盖结果" MODIFIED="1752294808116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/上市A股公司" />
     <SUITE FILE_PATH="coverage/crawler_pachong$main.coverage" NAME="main 覆盖结果" MODIFIED="1751042659022" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool/扫描PDF文字" />
     <SUITE FILE_PATH="coverage/crawler_pachong$DAF_get__1_.coverage" NAME="DAF_get (1) 覆盖结果" MODIFIED="1749492004064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool" />
     <SUITE FILE_PATH="coverage/crawler_pachong$Strclean.coverage" NAME="Strclean 覆盖结果" MODIFIED="1750700127108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool" />
-    <SUITE FILE_PATH="coverage/crawler_pachong$text.coverage" NAME="text 覆盖结果" MODIFIED="1751478208117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/text" />
-    <SUITE FILE_PATH="coverage/crawler_pachong$1.coverage" NAME="1 覆盖结果" MODIFIED="1751636657665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/上市A股公司" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$text.coverage" NAME="text 覆盖结果" MODIFIED="1751801039848" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/text" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$1.coverage" NAME="1 覆盖结果" MODIFIED="1751807235477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/text" />
     <SUITE FILE_PATH="coverage/crawler_pachong$get_ipv6__1_.coverage" NAME="get_ipv6 (1) 覆盖结果" MODIFIED="1749875074081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/crawler_pachong$__1_.coverage" NAME="天眼查 (1) 覆盖结果" MODIFIED="1751523312482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/上市A股公司" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$lingke_text.coverage" NAME="lingke_text 覆盖结果" MODIFIED="1751733622215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/text" />
     <SUITE FILE_PATH="coverage/crawler_pachong$reStr.coverage" NAME="reStr 覆盖结果" MODIFIED="1750695429672" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool" />
     <SUITE FILE_PATH="coverage/crawler_pachong$main__1_.coverage" NAME="main (1) 覆盖结果" MODIFIED="1750732108727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/PDF识别" />
     <SUITE FILE_PATH="coverage/crawler_pachong$top250__1_.coverage" NAME="豆瓣电影top250 (1) 覆盖结果" MODIFIED="1751182858210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/text" />
@@ -928,11 +939,12 @@
     <SUITE FILE_PATH="coverage/crawler_pachong$del_FD.coverage" NAME="del_FD 覆盖结果" MODIFIED="1751285726787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool" />
     <SUITE FILE_PATH="coverage/crawler_pachong$general_crack.coverage" NAME="general_crack 覆盖结果" MODIFIED="1750930824338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../ruishu" />
     <SUITE FILE_PATH="coverage/crawler_pachong$get_tool.coverage" NAME="get_tool 覆盖结果" MODIFIED="1749570779883" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool" />
-    <SUITE FILE_PATH="coverage/crawler_pachong$2.coverage" NAME="2 覆盖结果" MODIFIED="1751637117428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/上市A股公司" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$bqgda__1_.coverage" NAME="bqgda小说 (1) 覆盖结果" MODIFIED="1751805892455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/text" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$2.coverage" NAME="2 覆盖结果" MODIFIED="1752048627446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/上市A股公司" />
     <SUITE FILE_PATH="coverage/crawler_pachong$ipv6.coverage" NAME="ipv6 覆盖结果" MODIFIED="1749666078730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/crawler_pachong$PDF.coverage" NAME="请求PDF转图片文字 覆盖结果" MODIFIED="1751044555131" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool/扫描PDF文字" />
     <SUITE FILE_PATH="coverage/crawler_pachong$__init__.coverage" NAME="__init__ 覆盖结果" MODIFIED="1751633102783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb" />
-    <SUITE FILE_PATH="coverage/crawler_pachong$1__1_.coverage" NAME="1 (1) 覆盖结果" MODIFIED="1751110802613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/text" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$1__1_.coverage" NAME="1 (1) 覆盖结果" MODIFIED="1751739356810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/text" />
     <SUITE FILE_PATH="coverage/crawler_pachong$vidu__1_.coverage" NAME="vidu视频 (1) 覆盖结果" MODIFIED="1751325966713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/text" />
     <SUITE FILE_PATH="coverage/crawler_pachong$get_sina__1_.coverage" NAME="get_sina (1) 覆盖结果" MODIFIED="1750641364459" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb" />
     <SUITE FILE_PATH="coverage/crawler_pachong$del_FD__1_.coverage" NAME="del_FD (1) 覆盖结果" MODIFIED="1749493524469" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool" />
