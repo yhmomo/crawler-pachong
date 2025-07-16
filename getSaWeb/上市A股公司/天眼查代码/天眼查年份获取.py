@@ -4,15 +4,7 @@ import time
 
 import pandas as pd
 import requests
-from tenacity import retry, stop_after_attempt, wait_random_exponential, retry_if_exception_type
 
-
-# 自定义异常类
-class RetryError(Exception):
-    pass
-
-
-# 请求头
 headers = {
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
@@ -21,24 +13,18 @@ headers = {
 }
 
 
-# 重试装饰器
-@retry(
-    stop=stop_after_attempt(5),  # 最多重试5次
-    wait=wait_random_exponential(multiplier=600, max=650),  # 指数退避策略
-    retry=retry_if_exception_type(requests.exceptions.RequestException)  # 只对requests异常进行重试
-)
 def get_save_data(idpar, name, daima, year):
     try:
         response = requests.get('https://capi.tianyancha.com/cloud-business-state/supply/summaryList',
                                 params=idpar,
                                 headers=headers)
         response.raise_for_status()
-        time.sleep(random.randint(8, 10))
+        time.sleep(random.randint(9, 10))
         data = response.json()
         print(data)
-        if data.get('state') == 'error' and '登录' in str(data):
+        if data.get('state') == 'error' or '登录' in str(data):
             print("登录失效")
-            raise RetryError("登录失效，需要重新登录")
+            return
         pageBean = data['data']['pageBean']
         result = pageBean['result']
         if not result:
@@ -91,11 +77,15 @@ def get_idparams(id, name, daima):
     response = requests.get('https://capi.tianyancha.com/cloud-business-state/supply/summaryList',
                             params=idparams,
                             headers=headers)
+    time.sleep(random.randint(9, 10))
+    if '登录' in str(response.json()):
+        print("登录失效")
+        return
     data = response.json()['data']
     pageBean = data['pageBean']
     pageSize = int(pageBean['pageSize'])
     total = int(pageBean['total'])
-    if pageSize == 0 or total == 0:
+    if pageSize == 0 or total == 0 or "0" == str(pageSize) or "0" == str(total):
         print(f"没有数据" + name + id)
         # 创建或读取CSV文件
         filenamepageSize = "A股公司_供应商数量为空.csv"
@@ -138,6 +128,8 @@ def get_idparams(id, name, daima):
             'pageNum': '1',
             'year': str(year),
         }
+        if str(year) == "0":
+            continue
         print(f"正在处理 {year} 年的数据")
         get_save_data(params, name, daima, str(year))
 
