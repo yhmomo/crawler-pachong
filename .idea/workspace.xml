@@ -7,8 +7,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="270953fb-1095-47f7-a384-aa94f38c5733" name="更改" comment="feat(getSaWeb): 添加多个文本抓取脚本&#10;&#10;- 新增 1.py、bqgda小说.py 和 lingke_text.py三个文本抓取脚本&#10;- 分别用于抓取维基百科、小说网站和领英网站的文本内容&#10;- 优化了请求头设置和 cookie 处理，提高了抓取成功率">
+    <list default="true" id="270953fb-1095-47f7-a384-aa94f38c5733" name="更改" comment="feat(getSaWeb): 多线程验证代理 IP&#10;&#10;- 新增多线程并发验证代理 IP 的功能&#10;- 抓取指定页的代理 IP 列表&#10;- 检查每个代理的可用性并记录结果&#10;- 将可用代理写入文件&#10;- 删除了不必要的旧代码">
+      <change afterPath="$PROJECT_DIR$/getSaWeb/上市A股公司/天眼查代码/提取天眼查ID.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getSaWeb/text/1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/getSaWeb/text/lingke_text.py" beforeDir="false" afterPath="$PROJECT_DIR$/getSaWeb/text/模拟浏览器.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getSaWeb/text/text.html" beforeDir="false" afterPath="$PROJECT_DIR$/getSaWeb/text/text.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getSaWeb/text/text.py" beforeDir="false" afterPath="$PROJECT_DIR$/getSaWeb/text/text.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getSaWeb/上市A股公司/2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/getSaWeb/上市A股公司/天眼查代码/1.py" beforeDir="false" afterPath="$PROJECT_DIR$/getSaWeb/上市A股公司/天眼查代码/读取代理池IP请求天眼查.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getSaWeb/上市A股公司/天眼查代码/2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/getSaWeb/上市A股公司/天眼查代码/A股公司供应商用年份.csv" beforeDir="false" afterPath="$PROJECT_DIR$/getSaWeb/上市A股公司/天眼查代码/A股公司供应商用年份.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getSaWeb/上市A股公司/天眼查数据/供应商/供应商1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/getSaWeb/上市A股公司/天眼查数据/供应商/供应商2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/getSaWeb/上市A股公司/天眼查数据/客户/客户1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/getSaWeb/上市A股公司/天眼查数据/客户/客户2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/getSaWeb/上市A股公司/天眼查数据/客户/客户3.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/getSaWeb/表格PDF/本科普通批上.xlsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,9 +66,6 @@
     &quot;assignee&quot;: &quot;yhmomo&quot;
   }
 }</component>
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="5f1704b5-3ae9-4678-84e2-5430c42bdc32" />
-  </component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;git@github.com:/yhmomo/crawler-pachong.git&quot;,
@@ -81,9 +93,11 @@
     &quot;JavaScript 调试.text.html.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;Node.js.1.js.executor&quot;: &quot;Run&quot;,
-    &quot;Python.1 (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.1 (1).executor&quot;: &quot;Debug&quot;,
+    &quot;Python.1.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.2 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.2.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.21.executor&quot;: &quot;Run&quot;,
     &quot;Python.DAF_get (1).executor&quot;: &quot;Run&quot;,
     &quot;Python.Image_to_PDF  (1).executor&quot;: &quot;Run&quot;,
     &quot;Python.Strclean.executor&quot;: &quot;Debug&quot;,
@@ -103,9 +117,11 @@
     &quot;Python.reStr.executor&quot;: &quot;Run&quot;,
     &quot;Python.szggzy.executor&quot;: &quot;Run&quot;,
     &quot;Python.text (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.text (2).executor&quot;: &quot;Debug&quot;,
     &quot;Python.text.executor&quot;: &quot;Run&quot;,
     &quot;Python.vidu视频 (1).executor&quot;: &quot;Run&quot;,
     &quot;Python.上海政府采购网合同.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.代理池获取 (1).executor&quot;: &quot;Debug&quot;,
     &quot;Python.公司名称.executor&quot;: &quot;Run&quot;,
     &quot;Python.动漫图片获取.executor&quot;: &quot;Run&quot;,
     &quot;Python.即梦视频 (1).executor&quot;: &quot;Debug&quot;,
@@ -114,12 +130,16 @@
     &quot;Python.图片转PDF.executor&quot;: &quot;Run&quot;,
     &quot;Python.天眼查 (1).executor&quot;: &quot;Debug&quot;,
     &quot;Python.天眼查.executor&quot;: &quot;Run&quot;,
+    &quot;Python.天眼查年份获取.executor&quot;: &quot;Debug&quot;,
     &quot;Python.宝安区.executor&quot;: &quot;Run&quot;,
     &quot;Python.整合表.executor&quot;: &quot;Run&quot;,
+    &quot;Python.未命名.executor&quot;: &quot;Run&quot;,
+    &quot;Python.模拟浏览器.executor&quot;: &quot;Run&quot;,
     &quot;Python.环水集团.executor&quot;: &quot;Run&quot;,
     &quot;Python.电影评价.executor&quot;: &quot;Run&quot;,
     &quot;Python.获取天眼查链接.executor&quot;: &quot;Run&quot;,
     &quot;Python.补充.executor&quot;: &quot;Run&quot;,
+    &quot;Python.补充数据.executor&quot;: &quot;Debug&quot;,
     &quot;Python.表格初始化 (1).executor&quot;: &quot;Run&quot;,
     &quot;Python.视频获取 (1).executor&quot;: &quot;Run&quot;,
     &quot;Python.视频获取.executor&quot;: &quot;Run&quot;,
@@ -129,14 +149,14 @@
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Python/crawler-pachong&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Python/crawler-pachong/getSaWeb/text&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -147,21 +167,22 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Python\crawler-pachong\getSaWeb\text" />
+      <recent name="D:\Python\crawler-pachong\getSaWeb\上市A股公司\天眼查代码" />
       <recent name="D:\crawler-pachong\getSaWeb\上市A股公司" />
       <recent name="D:\crawler-pachong\getSaWeb\爬虫培训招标" />
       <recent name="D:\crawler-pachong" />
-      <recent name="D:\crawler-pachong\getSaWeb" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Python\crawler-pachong\getSaWeb\上市A股公司\天眼查代码" />
       <recent name="D:\Python\crawler-pachong\getSaWeb\上市A股公司\百度获取天眼查链接" />
       <recent name="D:\Python\crawler-pachong\getSaWeb\上市A股公司\天眼查数据" />
-      <recent name="D:\Python\crawler-pachong\getSaWeb\上市A股公司\天眼查代码" />
       <recent name="D:\crawler-pachong\getSaWeb\获取地址" />
       <recent name="D:\crawler-pachong\getSaWeb\text" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.2">
-    <configuration name="天眼查 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.text">
+    <configuration name="上海政府采购网合同" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="爬虫" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -170,81 +191,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/getSaWeb/上市A股公司" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/getSaWeb/text" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getSaWeb/上市A股公司/天眼查.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="天眼查 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="爬虫" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/getSaWeb/上市A股公司" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getSaWeb/上市A股公司/天眼查.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="天眼查 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="爬虫" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/getSaWeb/上市A股公司" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getSaWeb/上市A股公司/天眼查.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="电影评价" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="爬虫" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/getSaWeb/豆瓣TOP250" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getSaWeb/豆瓣TOP250/电影评价.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getSaWeb/text/上海政府采购网合同.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -254,7 +206,7 @@
       <method v="2" />
     </configuration>
     <configuration name="1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="爬虫" />
+      <module name="crawler-pachong" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -262,12 +214,35 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/getSaWeb/上市A股公司" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/getSaWeb/上市A股公司/天眼查代码" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getSaWeb/上市A股公司/1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getSaWeb/上市A股公司/天眼查代码/1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="2 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="crawler-pachong" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/getSaWeb/text" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getSaWeb/text/2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -277,7 +252,7 @@
       <method v="2" />
     </configuration>
     <configuration name="2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="爬虫" />
+      <module name="crawler-pachong" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -285,12 +260,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/getSaWeb/上市A股公司" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/getSaWeb/上市A股公司/天眼查代码" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getSaWeb/上市A股公司/2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getSaWeb/上市A股公司/天眼查代码/2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -299,8 +274,8 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="获取天眼查链接" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="爬虫" />
+    <configuration name="提取天眼查ID" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="crawler-pachong" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -308,12 +283,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/getSaWeb/上市A股公司" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/getSaWeb/上市A股公司/天眼查代码" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getSaWeb/上市A股公司/获取天眼查链接.py" />
+      <option name="SCRIPT_NAME" value="D:\Python\crawler-pachong\getSaWeb\上市A股公司\天眼查代码\提取天眼查ID.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -345,8 +320,8 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="上海政府采购网合同" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="爬虫" />
+    <configuration name="模拟浏览器" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="crawler-pachong" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -359,7 +334,30 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getSaWeb/text/上海政府采购网合同.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getSaWeb/text/模拟浏览器.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="模拟浏览器" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="crawler-pachong" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/getSaWeb/text" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getSaWeb/text/模拟浏览器.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -414,7 +412,145 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="补充数据" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="crawler-pachong" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/getSaWeb/上市A股公司/天眼查代码" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getSaWeb/上市A股公司/天眼查代码/补充数据.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="补充数据" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="crawler-pachong" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/getSaWeb/上市A股公司/天眼查代码" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getSaWeb/上市A股公司/天眼查代码/补充数据.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="模拟浏览器" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="crawler-pachong" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/getSaWeb/text" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getSaWeb/text/模拟浏览器.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="模拟浏览器" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="crawler-pachong" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/getSaWeb/text" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getSaWeb/text/模拟浏览器.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="代理池获取" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="crawler-pachong" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/getSaWeb/text" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:\Python\crawler-pachong\getSaWeb\上市A股公司\天眼查代码\代理池获取.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="模拟浏览器" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="crawler-pachong" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/getSaWeb/text" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getSaWeb/text/模拟浏览器.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="获取天眼查链接" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="爬虫" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -423,12 +559,35 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/getSaWeb" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/getSaWeb/上市A股公司" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getSaWeb/__init__.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getSaWeb/上市A股公司/获取天眼查链接.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="模拟浏览器" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="crawler-pachong" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/getSaWeb/text" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/getSaWeb/text/模拟浏览器.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -438,7 +597,7 @@
       <method v="2" />
     </configuration>
     <configuration name="text" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="爬虫" />
+      <module name="crawler-pachong" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -460,21 +619,29 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.1" />
+      <item itemvalue="Python.2 (1)" />
+      <item itemvalue="Python.2" />
+      <item itemvalue="Python.提取天眼查ID" />
+      <item itemvalue="Python.上海政府采购网合同" />
+      <item itemvalue="Python.text" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.2" />
-        <item itemvalue="Python.1" />
-        <item itemvalue="Python.__init__" />
-        <item itemvalue="Python.天眼查 (1)" />
         <item itemvalue="Python.text" />
+        <item itemvalue="Python.2 (1)" />
+        <item itemvalue="Python.1" />
+        <item itemvalue="Python.2" />
+        <item itemvalue="Python.提取天眼查ID" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-PY-251.26927.74" />
-        <option value="bundled-python-sdk-657d8234b839-64d779b69b7a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.26927.74" />
+        <option value="bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-PY-252.23892.439" />
+        <option value="bundled-python-sdk-b3ae9b5d7125-f0eec537fc84-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.23892.439" />
       </set>
     </attachedChunks>
   </component>
@@ -580,6 +747,32 @@
       <workItem from="1751659494501" duration="113000" />
       <workItem from="1752300021428" duration="9000" />
       <workItem from="1752300047538" duration="28000" />
+      <workItem from="1752300097569" duration="449000" />
+      <workItem from="1752300567827" duration="112000" />
+      <workItem from="1752300697035" duration="85000" />
+      <workItem from="1752300819000" duration="44846000" />
+      <workItem from="1752412090249" duration="45721000" />
+      <workItem from="1752640756056" duration="1346000" />
+      <workItem from="1752648017774" duration="1712000" />
+      <workItem from="1752670294169" duration="14161000" />
+      <workItem from="1752757672618" duration="24411000" />
+      <workItem from="1753022332200" duration="989000" />
+      <workItem from="1753689518989" duration="240000" />
+      <workItem from="1753764414468" duration="827000" />
+      <workItem from="1753779536557" duration="933000" />
+      <workItem from="1753781071393" duration="3870000" />
+      <workItem from="1753861964963" duration="1333000" />
+      <workItem from="1753942254246" duration="994000" />
+      <workItem from="1753956023209" duration="800000" />
+      <workItem from="1754217308384" duration="839000" />
+      <workItem from="1754476663547" duration="9759000" />
+      <workItem from="1754713996509" duration="1018000" />
+      <workItem from="1754715029886" duration="20000" />
+      <workItem from="1754715089286" duration="48000" />
+      <workItem from="1754715145595" duration="89000" />
+      <workItem from="1754715269523" duration="436000" />
+      <workItem from="1754715720100" duration="632000" />
+      <workItem from="1754716362131" duration="125000" />
     </task>
     <task id="LOCAL-00001" summary="爬虫测试代码">
       <option name="closed" value="true" />
@@ -853,7 +1046,23 @@
       <option name="project" value="LOCAL" />
       <updated>1752299935111</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="feat(getSaWeb): 添加多个文本抓取脚本&#10;&#10;- 新增 1.py、bqgda小说.py 和 lingke_text.py三个文本抓取脚本&#10;- 分别用于抓取维基百科、小说网站和领英网站的文本内容&#10;- 优化了请求头设置和 cookie 处理，提高了抓取成功率">
+      <option name="closed" value="true" />
+      <created>1752300217088</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1752300217088</updated>
+    </task>
+    <task id="LOCAL-00036" summary="feat(getSaWeb): 添加天眼查供应商信息爬取脚本- 新增多线程爬取脚本，每个代理独占一个线程&#10;- 实现了对天眼查供应商信息的抓取，包括供应商名称、采购金额等&#10;- 添加了错误处理和重试机制，提高爬取稳定性- 生成了多个输出文件，分别记录不同情况下的供应商信息">
+      <option name="closed" value="true" />
+      <created>1752640823378</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1752640823378</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -887,7 +1096,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="cangcuc图片视频爬虫" />
     <MESSAGE value="优化——cangcuc图片视频" />
     <MESSAGE value="优化代码,启用多线程并发，设置假死时间，重新代码" />
     <MESSAGE value="优化代码" />
@@ -912,7 +1120,8 @@
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;getSaWeb/上市A股公司/简单天眼查查询.py" />
     <MESSAGE value="fix(上市A股公司): 更新天眼查链接并优化数据获取&#10;&#10;- 修改1.py和2.py中的文件路径，使用相对路径替代绝对路径&#10;- 新增天眼查年份获取功能，实现对特定年份数据的抓取- 添加模拟浏览器获取天眼查链接的脚本，解决部分公司链接缺失问题&#10;- 优化数据处理流程，提高数据抓取的稳定性和效率" />
     <MESSAGE value="feat(getSaWeb): 添加多个文本抓取脚本&#10;&#10;- 新增 1.py、bqgda小说.py 和 lingke_text.py三个文本抓取脚本&#10;- 分别用于抓取维基百科、小说网站和领英网站的文本内容&#10;- 优化了请求头设置和 cookie 处理，提高了抓取成功率" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(getSaWeb): 添加多个文本抓取脚本&#10;&#10;- 新增 1.py、bqgda小说.py 和 lingke_text.py三个文本抓取脚本&#10;- 分别用于抓取维基百科、小说网站和领英网站的文本内容&#10;- 优化了请求头设置和 cookie 处理，提高了抓取成功率" />
+    <MESSAGE value="feat(getSaWeb): 添加天眼查供应商信息爬取脚本- 新增多线程爬取脚本，每个代理独占一个线程&#10;- 实现了对天眼查供应商信息的抓取，包括供应商名称、采购金额等&#10;- 添加了错误处理和重试机制，提高爬取稳定性- 生成了多个输出文件，分别记录不同情况下的供应商信息" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(getSaWeb): 添加天眼查供应商信息爬取脚本- 新增多线程爬取脚本，每个代理独占一个线程&#10;- 实现了对天眼查供应商信息的抓取，包括供应商名称、采购金额等&#10;- 添加了错误处理和重试机制，提高爬取稳定性- 生成了多个输出文件，分别记录不同情况下的供应商信息" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -938,34 +1147,37 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/crawler_pachong$pika.coverage" NAME="pika视频下载 覆盖结果" MODIFIED="1751380904328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/text" />
-    <SUITE FILE_PATH="coverage/crawler_pachong$Image_to_PDF___1_.coverage" NAME="Image_to_PDF  (1) 覆盖结果" MODIFIED="1749492117937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool" />
     <SUITE FILE_PATH="coverage/crawler_pachong$del_mp4.coverage" NAME="del_mp4 覆盖结果" MODIFIED="1751286100863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool" />
-    <SUITE FILE_PATH="coverage/crawler_pachong$.coverage" NAME="天眼查 覆盖结果" MODIFIED="1752294808116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/上市A股公司" />
-    <SUITE FILE_PATH="coverage/crawler_pachong$main.coverage" NAME="main 覆盖结果" MODIFIED="1751042659022" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool/扫描PDF文字" />
-    <SUITE FILE_PATH="coverage/crawler_pachong$DAF_get__1_.coverage" NAME="DAF_get (1) 覆盖结果" MODIFIED="1749492004064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool" />
-    <SUITE FILE_PATH="coverage/crawler_pachong$Strclean.coverage" NAME="Strclean 覆盖结果" MODIFIED="1750700127108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool" />
-    <SUITE FILE_PATH="coverage/crawler_pachong$text.coverage" NAME="text 覆盖结果" MODIFIED="1751801039848" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/text" />
-    <SUITE FILE_PATH="coverage/crawler_pachong$1.coverage" NAME="1 覆盖结果" MODIFIED="1751807235477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/text" />
     <SUITE FILE_PATH="coverage/crawler_pachong$get_ipv6__1_.coverage" NAME="get_ipv6 (1) 覆盖结果" MODIFIED="1749875074081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/crawler_pachong$__1_.coverage" NAME="天眼查 (1) 覆盖结果" MODIFIED="1751523312482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/上市A股公司" />
-    <SUITE FILE_PATH="coverage/crawler_pachong$lingke_text.coverage" NAME="lingke_text 覆盖结果" MODIFIED="1751733622215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/text" />
-    <SUITE FILE_PATH="coverage/crawler_pachong$reStr.coverage" NAME="reStr 覆盖结果" MODIFIED="1750695429672" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool" />
     <SUITE FILE_PATH="coverage/crawler_pachong$main__1_.coverage" NAME="main (1) 覆盖结果" MODIFIED="1750732108727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/PDF识别" />
-    <SUITE FILE_PATH="coverage/crawler_pachong$top250__1_.coverage" NAME="豆瓣电影top250 (1) 覆盖结果" MODIFIED="1751182858210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/text" />
-    <SUITE FILE_PATH="coverage/crawler_pachong$text__1_.coverage" NAME="text (1) 覆盖结果" MODIFIED="1750606703714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/crawler_pachong$get_cangcuc__1_.coverage" NAME="get_cangcuc (1) 覆盖结果" MODIFIED="1749541732977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb" />
-    <SUITE FILE_PATH="coverage/crawler_pachong$szggzy.coverage" NAME="szggzy 覆盖结果" MODIFIED="1750701519872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/爬虫培训招标" />
-    <SUITE FILE_PATH="coverage/crawler_pachong$del_FD.coverage" NAME="del_FD 覆盖结果" MODIFIED="1751285726787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool" />
-    <SUITE FILE_PATH="coverage/crawler_pachong$general_crack.coverage" NAME="general_crack 覆盖结果" MODIFIED="1750930824338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../ruishu" />
-    <SUITE FILE_PATH="coverage/crawler_pachong$get_tool.coverage" NAME="get_tool 覆盖结果" MODIFIED="1749570779883" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool" />
     <SUITE FILE_PATH="coverage/crawler_pachong$bqgda__1_.coverage" NAME="bqgda小说 (1) 覆盖结果" MODIFIED="1751805892455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/text" />
-    <SUITE FILE_PATH="coverage/crawler_pachong$2.coverage" NAME="2 覆盖结果" MODIFIED="1752048627446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/上市A股公司" />
-    <SUITE FILE_PATH="coverage/crawler_pachong$ipv6.coverage" NAME="ipv6 覆盖结果" MODIFIED="1749666078730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/crawler_pachong$PDF.coverage" NAME="请求PDF转图片文字 覆盖结果" MODIFIED="1751044555131" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool/扫描PDF文字" />
-    <SUITE FILE_PATH="coverage/crawler_pachong$__init__.coverage" NAME="__init__ 覆盖结果" MODIFIED="1751633102783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb" />
-    <SUITE FILE_PATH="coverage/crawler_pachong$1__1_.coverage" NAME="1 (1) 覆盖结果" MODIFIED="1751739356810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/text" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$2.coverage" NAME="2 覆盖结果" MODIFIED="1752758677903" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/上市A股公司/天眼查代码" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$top250__1_.coverage" NAME="豆瓣电影top250 (1) 覆盖结果" MODIFIED="1751182858210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/text" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$main.coverage" NAME="main 覆盖结果" MODIFIED="1751042659022" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool/扫描PDF文字" />
     <SUITE FILE_PATH="coverage/crawler_pachong$vidu__1_.coverage" NAME="vidu视频 (1) 覆盖结果" MODIFIED="1751325966713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/text" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$lingke_text.coverage" NAME="lingke_text 覆盖结果" MODIFIED="1751733622215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/text" />
     <SUITE FILE_PATH="coverage/crawler_pachong$get_sina__1_.coverage" NAME="get_sina (1) 覆盖结果" MODIFIED="1750641364459" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$Strclean.coverage" NAME="Strclean 覆盖结果" MODIFIED="1750700127108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$text__2_.coverage" NAME="text (2) 覆盖结果" MODIFIED="1752324383320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/text" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$text.coverage" NAME="text 覆盖结果" MODIFIED="1754716267417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/text" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$1__1_.coverage" NAME="1 (1) 覆盖结果" MODIFIED="1752330840722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/上市A股公司/天眼查代码" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$__1_.coverage" NAME="代理池获取 (1) 覆盖结果" MODIFIED="1752391528893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/上市A股公司/天眼查代码" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$get_tool.coverage" NAME="get_tool 覆盖结果" MODIFIED="1749570779883" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$2__1_.coverage" NAME="2 (1) 覆盖结果" MODIFIED="1754668877173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/text" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$szggzy.coverage" NAME="szggzy 覆盖结果" MODIFIED="1750701519872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/爬虫培训招标" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$Image_to_PDF___1_.coverage" NAME="Image_to_PDF  (1) 覆盖结果" MODIFIED="1749492117937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$21.coverage" NAME="21 覆盖结果" MODIFIED="1752302685851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/上市A股公司" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$del_FD.coverage" NAME="del_FD 覆盖结果" MODIFIED="1751285726787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$__init__.coverage" NAME="__init__ 覆盖结果" MODIFIED="1751633102783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb" />
     <SUITE FILE_PATH="coverage/crawler_pachong$del_FD__1_.coverage" NAME="del_FD (1) 覆盖结果" MODIFIED="1749493524469" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$reStr.coverage" NAME="reStr 覆盖结果" MODIFIED="1750695429672" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$ipv6.coverage" NAME="ipv6 覆盖结果" MODIFIED="1749666078730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$.coverage" NAME="模拟浏览器 覆盖结果" MODIFIED="1753862016160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/text" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$PDF.coverage" NAME="请求PDF转图片文字 覆盖结果" MODIFIED="1751044555131" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool/扫描PDF文字" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$DAF_get__1_.coverage" NAME="DAF_get (1) 覆盖结果" MODIFIED="1749492004064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tool" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$1.coverage" NAME="1 覆盖结果" MODIFIED="1753022654442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/上市A股公司/天眼查代码" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$text__1_.coverage" NAME="text (1) 覆盖结果" MODIFIED="1752321548806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb/上市A股公司/天眼查代码" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$general_crack.coverage" NAME="general_crack 覆盖结果" MODIFIED="1750930824338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../ruishu" />
+    <SUITE FILE_PATH="coverage/crawler_pachong$get_cangcuc__1_.coverage" NAME="get_cangcuc (1) 覆盖结果" MODIFIED="1749541732977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/getSaWeb" />
   </component>
 </project>
